@@ -1,0 +1,344 @@
+{
+  "id" : "687473a72ca29e234472df58",
+  "gid" : "019806e3-c6bc-70eb-9915-33299b9b1f02",
+  "name" : "NewApp",
+  "applicationType" : 3,
+  "applicationStatus" : "NORMAL",
+  "editingApplicationDSL" : {
+    "ui" : {
+      "compType" : "navV2_VNPT",
+      "comp" : {
+        "header" : {
+          "showHeader" : false,
+          "slot" : {
+            "container" : {
+              "layout" : { }
+            }
+          }
+        },
+        "headerHeight" : "100",
+        "dataOptionType" : "manual",
+        "items" : [ {
+          "label" : "Name_of_Page",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6878a09aaddfcd1be0cc2876",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "c56fc968",
+          "icon" : "/icon:solid/1"
+        }, {
+          "label" : "TestGenFeedback",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6878a1a7addfcd1be0cc28d3",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "7a4afd30",
+          "icon" : "/icon:solid/audio-description"
+        }, {
+          "label" : "Student2",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6878a5d3addfcd1be0cc2b7f",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "bf9a75f4"
+        } ],
+        "siderWidth" : "20%",
+        "siderCollapsedWidth" : "20px",
+        "siderCollapsible" : false,
+        "showIconsWhenCollapsed" : "hide",
+        "showIconsmenutabCollapsed" : "show",
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  },
+  "publicToAll" : false,
+  "publicToMarketplace" : false,
+  "agencyProfile" : false,
+  "editingUserId" : "686b37008543551b717cb6ab",
+  "lastEditedAt" : "2025-07-17T07:27:46.113Z",
+  "createdAt" : "2025-07-14T03:04:07.631Z",
+  "changeType" : "CREATE",
+  "updatedAt" : "2025-07-29T09:24:42.736Z",
+  "createdBy" : "67da2b5cc0a7bf236ab70f0e",
+  "slug" : null,
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "commitId" : null,
+  "lastCommitAt" : null,
+  "editingQueries" : [ ],
+  "editingModules" : [ ],
+  "editingApplicationDSLOrNull" : {
+    "ui" : {
+      "compType" : "navV2_VNPT",
+      "comp" : {
+        "header" : {
+          "showHeader" : false,
+          "slot" : {
+            "container" : {
+              "layout" : { }
+            }
+          }
+        },
+        "headerHeight" : "100",
+        "dataOptionType" : "manual",
+        "items" : [ {
+          "label" : "Name_of_Page",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6878a09aaddfcd1be0cc2876",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "c56fc968",
+          "icon" : "/icon:solid/1"
+        }, {
+          "label" : "TestGenFeedback",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6878a1a7addfcd1be0cc28d3",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "7a4afd30",
+          "icon" : "/icon:solid/audio-description"
+        }, {
+          "label" : "Student2",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6878a5d3addfcd1be0cc2b7f",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "bf9a75f4"
+        } ],
+        "siderWidth" : "20%",
+        "siderCollapsedWidth" : "20px",
+        "siderCollapsible" : false,
+        "showIconsWhenCollapsed" : "hide",
+        "showIconsmenutabCollapsed" : "show",
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  }
+}

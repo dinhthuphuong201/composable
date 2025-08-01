@@ -1,0 +1,78 @@
+{
+  "id" : "687dfe86b212b97c06a472f4",
+  "updatedAt" : "2025-07-23T01:25:20.516Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "01982c2a-3e9b-7b4b-8e1f-dd5de2ccad30",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Câu 18",
+  "isSecure" : false,
+  "libraryQueryDSL" : {
+    "query" : {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT product_name\nFROM order_items\nWHERE price > 100;",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "687dfe86b212b97c06a472f4",
+      "name" : "Câu 18",
+      "order" : 0,
+      "datasourceId" : "6878bd7caddfcd1be0cc3414",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }
+  },
+  "commitId" : null,
+  "changeType" : "UPDATE",
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "6878bd7caddfcd1be0cc3414",
+    "compType" : "mysql",
+    "comp" : {
+      "commandType" : "INSERT",
+      "command" : {
+        "table" : "",
+        "changeSet" : {
+          "compType" : "KEY_VALUE_PAIRS",
+          "comp" : [ {
+            "column" : "",
+            "value" : ""
+          } ]
+        }
+      },
+      "mode" : "SQL",
+      "sql" : "SELECT product_name\nFROM order_items\nWHERE price > 100;",
+      "disablePreparedStatement" : false,
+      "isSecure" : false
+    },
+    "timeout" : ""
+  }
+}

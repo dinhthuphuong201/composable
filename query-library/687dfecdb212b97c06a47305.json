@@ -1,0 +1,78 @@
+{
+  "id" : "687dfecdb212b97c06a47305",
+  "updatedAt" : "2025-07-21T08:48:33.467Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "01982c2b-53be-77d4-b1b5-5eb89f782400",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Câu 19",
+  "isSecure" : false,
+  "libraryQueryDSL" : {
+    "query" : {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT order_id\nFROM order_items\nGROUP BY order_id\nHAVING SUM(price) < 200;",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "687dfecdb212b97c06a47305",
+      "name" : "Câu 19",
+      "order" : 0,
+      "datasourceId" : "6878bd7caddfcd1be0cc3414",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }
+  },
+  "commitId" : null,
+  "changeType" : null,
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "6878bd7caddfcd1be0cc3414",
+    "compType" : "mysql",
+    "comp" : {
+      "commandType" : "INSERT",
+      "command" : {
+        "table" : "",
+        "changeSet" : {
+          "compType" : "KEY_VALUE_PAIRS",
+          "comp" : [ {
+            "column" : "",
+            "value" : ""
+          } ]
+        }
+      },
+      "mode" : "SQL",
+      "sql" : "SELECT order_id\nFROM order_items\nGROUP BY order_id\nHAVING SUM(price) < 200;",
+      "disablePreparedStatement" : false,
+      "isSecure" : false
+    },
+    "timeout" : ""
+  }
+}

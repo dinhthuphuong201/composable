@@ -1,0 +1,78 @@
+{
+  "id" : "688043f96141a340779c7c82",
+  "updatedAt" : "2025-07-23T02:08:18.559Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "01983509-87a2-7a24-ad02-326c65bb3c09",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Câu 34",
+  "isSecure" : false,
+  "libraryQueryDSL" : {
+    "query" : {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT DATE(order_date) AS order_date, COUNT(order_id) AS total_orders FROM orders GROUP BY DATE(order_date);",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "688043f96141a340779c7c82",
+      "name" : "Câu 34",
+      "order" : 0,
+      "datasourceId" : "6878bd7caddfcd1be0cc3414",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }
+  },
+  "commitId" : null,
+  "changeType" : "UPDATE",
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "6878bd7caddfcd1be0cc3414",
+    "compType" : "mysql",
+    "comp" : {
+      "commandType" : "INSERT",
+      "command" : {
+        "table" : "",
+        "changeSet" : {
+          "compType" : "KEY_VALUE_PAIRS",
+          "comp" : [ {
+            "column" : "",
+            "value" : ""
+          } ]
+        }
+      },
+      "mode" : "SQL",
+      "sql" : "SELECT DATE(order_date) AS order_date, COUNT(order_id) AS total_orders FROM orders GROUP BY DATE(order_date);",
+      "disablePreparedStatement" : false,
+      "isSecure" : false
+    },
+    "timeout" : ""
+  }
+}

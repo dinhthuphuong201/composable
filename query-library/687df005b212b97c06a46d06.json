@@ -1,0 +1,78 @@
+{
+  "id" : "687df005b212b97c06a46d06",
+  "updatedAt" : "2025-07-21T08:03:09.544Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "01982bf1-93d7-75fb-9c45-53fd29bcdcb6",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Câu 14 - Tìm khách hàng đã đặt từ 2 đơn hàng trở lên",
+  "isSecure" : false,
+  "libraryQueryDSL" : {
+    "query" : {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT c.name AS customer_name, COUNT(o.order_id) AS order_count\nFROM customers c\nJOIN orders o ON c.customer_id = o.customer_id\nGROUP BY c.customer_id, c.name\nHAVING order_count >= 2;",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "687df005b212b97c06a46d06",
+      "name" : "Câu 14 - Tìm khách hàng đã đặt từ 2 đơn hàng trở lên",
+      "order" : 0,
+      "datasourceId" : "6878bd7caddfcd1be0cc3414",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }
+  },
+  "commitId" : null,
+  "changeType" : null,
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "6878bd7caddfcd1be0cc3414",
+    "compType" : "mysql",
+    "comp" : {
+      "commandType" : "INSERT",
+      "command" : {
+        "table" : "",
+        "changeSet" : {
+          "compType" : "KEY_VALUE_PAIRS",
+          "comp" : [ {
+            "column" : "",
+            "value" : ""
+          } ]
+        }
+      },
+      "mode" : "SQL",
+      "sql" : "SELECT c.name AS customer_name, COUNT(o.order_id) AS order_count\nFROM customers c\nJOIN orders o ON c.customer_id = o.customer_id\nGROUP BY c.customer_id, c.name\nHAVING order_count >= 2;",
+      "disablePreparedStatement" : false,
+      "isSecure" : false
+    },
+    "timeout" : ""
+  }
+}

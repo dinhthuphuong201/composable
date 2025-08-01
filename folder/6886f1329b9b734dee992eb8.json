@@ -1,0 +1,17 @@
+{
+  "id" : "6886f1329b9b734dee992eb8",
+  "updatedAt" : "2025-07-28T03:40:54.298Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "gid" : "01984f1e-2d72-7d59-8af8-fa5f7c60ffc7",
+  "parentFolderId" : null,
+  "parentFolderGid" : null,
+  "name" : "New folder",
+  "title" : null,
+  "description" : null,
+  "category" : null,
+  "type" : null,
+  "image" : null,
+  "commitId" : null,
+  "isChange" : true
+}

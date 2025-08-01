@@ -1,0 +1,392 @@
+{
+  "id" : "686f3c78bafc2a5ebd7c2601",
+  "gid" : "0197f284-366c-7bd8-b5b9-697cbb7f57af",
+  "name" : "PersonalPage",
+  "applicationType" : 3,
+  "applicationStatus" : "NORMAL",
+  "editingApplicationDSL" : {
+    "ui" : {
+      "compType" : "navV2_VNPT",
+      "comp" : {
+        "header" : {
+          "showHeader" : false,
+          "slot" : {
+            "container" : {
+              "layout" : { }
+            }
+          }
+        },
+        "headerHeight" : "100",
+        "dataOptionType" : "manual",
+        "items" : [ {
+          "label" : "Feedback_From_Customer",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "686f3de1bafc2a5ebd7c266c",
+                "error" : "Oops! Service is busy, please try again later.",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "98abaf16",
+          "icon" : "/icon:solid/address-book"
+        }, {
+          "label" : "FloatTextLayout",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "686f3e1bbafc2a5ebd7c2679",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "36ad8fac",
+          "icon" : "/icon:solid/bookmark"
+        }, {
+          "label" : "Page Layout",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6865e82f780338120e6eb6ef",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "b7623496",
+          "icon" : "/icon:solid/book-bookmark"
+        }, {
+          "label" : "PageName",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "686f40babafc2a5ebd7c27f5",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "2ea9c4f9",
+          "icon" : "/icon:solid/bowl-rice"
+        } ],
+        "siderWidth" : "20%",
+        "siderCollapsedWidth" : "20px",
+        "siderCollapsible" : false,
+        "showIconsWhenCollapsed" : "hide",
+        "showIconsmenutabCollapsed" : "show",
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  },
+  "publicToAll" : false,
+  "publicToMarketplace" : false,
+  "agencyProfile" : false,
+  "editingUserId" : "67da2b5cc0a7bf236ab70f0e",
+  "lastEditedAt" : "2025-07-15T04:04:20.188Z",
+  "createdAt" : "2025-07-10T04:07:20.443Z",
+  "changeType" : null,
+  "updatedAt" : "2025-07-15T08:36:10.740Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "slug" : null,
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "commitId" : null,
+  "lastCommitAt" : null,
+  "editingQueries" : [ ],
+  "editingModules" : [ ],
+  "editingApplicationDSLOrNull" : {
+    "ui" : {
+      "compType" : "navV2_VNPT",
+      "comp" : {
+        "header" : {
+          "showHeader" : false,
+          "slot" : {
+            "container" : {
+              "layout" : { }
+            }
+          }
+        },
+        "headerHeight" : "100",
+        "dataOptionType" : "manual",
+        "items" : [ {
+          "label" : "Feedback_From_Customer",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "686f3de1bafc2a5ebd7c266c",
+                "error" : "Oops! Service is busy, please try again later.",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "98abaf16",
+          "icon" : "/icon:solid/address-book"
+        }, {
+          "label" : "FloatTextLayout",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "686f3e1bbafc2a5ebd7c2679",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "36ad8fac",
+          "icon" : "/icon:solid/bookmark"
+        }, {
+          "label" : "Page Layout",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6865e82f780338120e6eb6ef",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "b7623496",
+          "icon" : "/icon:solid/book-bookmark"
+        }, {
+          "label" : "PageName",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "686f40babafc2a5ebd7c27f5",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "2ea9c4f9",
+          "icon" : "/icon:solid/bowl-rice"
+        } ],
+        "siderWidth" : "20%",
+        "siderCollapsedWidth" : "20px",
+        "siderCollapsible" : false,
+        "showIconsWhenCollapsed" : "hide",
+        "showIconsmenutabCollapsed" : "show",
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  }
+}

@@ -1,0 +1,605 @@
+{
+  "id" : "6875fe95fc5c2a6d3f9ec3bf",
+  "gid" : "01980cea-78f7-7ca3-9bdb-4d528405341b",
+  "name" : "New_PBC",
+  "applicationType" : 2,
+  "applicationStatus" : "NORMAL",
+  "editingApplicationDSL" : {
+    "ui" : {
+      "compType" : "module",
+      "comp" : {
+        "events" : {
+          "enableEventTestMessage" : true
+        },
+        "container" : {
+          "layout" : {
+            "d1059cc3" : {
+              "i" : "d1059cc3",
+              "h" : 40,
+              "w" : 13,
+              "delayCollision" : true,
+              "x" : 5,
+              "y" : 0,
+              "pos" : 0
+            }
+          },
+          "items" : {
+            "d1059cc3" : {
+              "compType" : "listView",
+              "comp" : {
+                "noOfRows" : "[\n  {\n    \"rate\": \"9.2\",\n    \"title\": \"The Shawshank Redemption\",\n    \"url\": \"https://www.imdb.com/title/tt0111161/\",\n    \"cover\": \"https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY67_CR0,0,45,67_AL_.jpg\"\n  },\n  {\n    \"rate\": \"9.2\",\n    \"title\": \"The Godfather\",\n    \"url\": \"https://www.imdb.com/title/tt0068646/\",\n    \"cover\": \"https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY67_CR1,0,45,67_AL_.jpg\"\n  },\n  {\n    \"rate\": \"9.0\",\n    \"title\": \"The Dark Knight\",\n    \"url\": \"https://www.imdb.com/title/tt0468569/\",\n    \"cover\": \"https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UY67_CR0,0,45,67_AL_.jpg\"\n  }\n]",
+                "noOfColumns" : "1",
+                "itemIndexName" : "i",
+                "itemDataName" : "currentItem",
+                "dynamicHeight" : "auto",
+                "heightUnitOfRow" : "1",
+                "container" : {
+                  "layout" : {
+                    "b8f6dd53" : {
+                      "i" : "b8f6dd53",
+                      "w" : 6,
+                      "h" : 14,
+                      "x" : 0,
+                      "y" : 0
+                    },
+                    "4f7027b0" : {
+                      "i" : "4f7027b0",
+                      "h" : 5,
+                      "w" : 17,
+                      "x" : 7,
+                      "y" : 0
+                    },
+                    "fc466616" : {
+                      "i" : "fc466616",
+                      "h" : 5,
+                      "w" : 17,
+                      "x" : 7,
+                      "y" : 9
+                    }
+                  },
+                  "items" : {
+                    "b8f6dd53" : {
+                      "compType" : "image",
+                      "comp" : {
+                        "sourceMode" : "standard",
+                        "src" : "{{currentItem.cover}}",
+                        "iconScoutAsset" : {
+                          "uuid" : "",
+                          "value" : "",
+                          "preview" : ""
+                        },
+                        "clipPath" : "none",
+                        "autoHeight" : "fixed",
+                        "restrictPaddingOnRotation" : "image",
+                        "enableOverflow" : false,
+                        "aspectRatio" : "16 / 9",
+                        "placement" : "top",
+                        "overflow" : "hidden",
+                        "positionX" : "center",
+                        "positionY" : "center",
+                        "showDataLoadingIndicators" : false,
+                        "preventStyleOverwriting" : false,
+                        "appliedThemeId" : "",
+                        "version" : "latest"
+                      },
+                      "name" : "image1"
+                    },
+                    "4f7027b0" : {
+                      "compType" : "link",
+                      "comp" : {
+                        "text" : "{{i+1}}. {{currentItem.title}}",
+                        "onEvent" : [ {
+                          "name" : "click",
+                          "handler" : {
+                            "compType" : "goToURL",
+                            "comp" : {
+                              "url" : "{{currentItem.url}}",
+                              "query" : [ { } ],
+                              "hash" : [ { } ],
+                              "inNewTab" : true
+                            },
+                            "condition" : "",
+                            "slowdown" : "debounce",
+                            "delay" : ""
+                          }
+                        } ],
+                        "showDataLoadingIndicators" : false,
+                        "preventStyleOverwriting" : false,
+                        "appliedThemeId" : "",
+                        "version" : "latest"
+                      },
+                      "name" : "link1"
+                    },
+                    "fc466616" : {
+                      "compType" : "rating",
+                      "comp" : {
+                        "defaultValue" : "{{currentItem.rate / 2}}",
+                        "value" : "",
+                        "max" : "5",
+                        "label" : {
+                          "text" : "",
+                          "width" : "33",
+                          "widthUnit" : "%",
+                          "position" : "row",
+                          "align" : "right"
+                        },
+                        "allowHalf" : true,
+                        "disabled" : "true",
+                        "showDataLoadingIndicators" : false,
+                        "preventStyleOverwriting" : false,
+                        "appliedThemeId" : "",
+                        "version" : "latest"
+                      },
+                      "name" : "rating1"
+                    }
+                  }
+                },
+                "autoHeight" : "auto",
+                "showVerticalScrollbar" : false,
+                "showHorizontalScrollbar" : false,
+                "horizontalGridCells" : 24,
+                "scrollbars" : false,
+                "pagination" : {
+                  "changeablePageSize" : null,
+                  "pageSize" : "6",
+                  "pageSizeOptions" : "[5, 10, 20, 50]"
+                },
+                "horizontal" : false,
+                "minHorizontalWidth" : "100px",
+                "enableSorting" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "listView1"
+            }
+          }
+        },
+        "containerSize" : {
+          "height" : 57,
+          "width" : 24
+        },
+        "containerRowCount" : 0,
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "queries" : [ {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "select * from students",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "id" : "36urcyz7q8rvlf8ql5o5xa5m",
+      "name" : "query1",
+      "order" : 1752720414335,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : true,
+      "externalToken" : "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTI3MjA1MjMsImV4cCI6MTc1MjcyMzUyMywib3JnYW5pemF0aW9uSWQiOiI2ODU4YzNkNTU5NzdhNDI0MTU4ZTZhOTEifQ.fa8AN_MxDxyYf2ygN5ne5QGoyfyjPkHpMW32sH_mMAt"
+    } ],
+    "refTree" : {
+      "value" : "",
+      "items" : [ {
+        "value" : "query1"
+      } ]
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  },
+  "publicToAll" : false,
+  "publicToMarketplace" : false,
+  "agencyProfile" : false,
+  "editingUserId" : "686b37008543551b717cb6ab",
+  "lastEditedAt" : "2025-07-17T07:02:21.191Z",
+  "createdAt" : "2025-07-15T07:09:09.770Z",
+  "changeType" : "CREATE",
+  "updatedAt" : "2025-07-30T08:55:08.402Z",
+  "createdBy" : "67da2b5cc0a7bf236ab70f0e",
+  "slug" : null,
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "commitId" : null,
+  "lastCommitAt" : null,
+  "editingQueries" : [ {
+    "id" : "36urcyz7q8rvlf8ql5o5xa5m",
+    "gid" : null,
+    "name" : "query1",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "select * from students",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  } ],
+  "editingModules" : [ ],
+  "editingApplicationDSLOrNull" : {
+    "ui" : {
+      "compType" : "module",
+      "comp" : {
+        "events" : {
+          "enableEventTestMessage" : true
+        },
+        "container" : {
+          "layout" : {
+            "d1059cc3" : {
+              "i" : "d1059cc3",
+              "h" : 40,
+              "w" : 13,
+              "delayCollision" : true,
+              "x" : 5,
+              "y" : 0,
+              "pos" : 0
+            }
+          },
+          "items" : {
+            "d1059cc3" : {
+              "compType" : "listView",
+              "comp" : {
+                "noOfRows" : "[\n  {\n    \"rate\": \"9.2\",\n    \"title\": \"The Shawshank Redemption\",\n    \"url\": \"https://www.imdb.com/title/tt0111161/\",\n    \"cover\": \"https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY67_CR0,0,45,67_AL_.jpg\"\n  },\n  {\n    \"rate\": \"9.2\",\n    \"title\": \"The Godfather\",\n    \"url\": \"https://www.imdb.com/title/tt0068646/\",\n    \"cover\": \"https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY67_CR1,0,45,67_AL_.jpg\"\n  },\n  {\n    \"rate\": \"9.0\",\n    \"title\": \"The Dark Knight\",\n    \"url\": \"https://www.imdb.com/title/tt0468569/\",\n    \"cover\": \"https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UY67_CR0,0,45,67_AL_.jpg\"\n  }\n]",
+                "noOfColumns" : "1",
+                "itemIndexName" : "i",
+                "itemDataName" : "currentItem",
+                "dynamicHeight" : "auto",
+                "heightUnitOfRow" : "1",
+                "container" : {
+                  "layout" : {
+                    "b8f6dd53" : {
+                      "i" : "b8f6dd53",
+                      "w" : 6,
+                      "h" : 14,
+                      "x" : 0,
+                      "y" : 0
+                    },
+                    "4f7027b0" : {
+                      "i" : "4f7027b0",
+                      "h" : 5,
+                      "w" : 17,
+                      "x" : 7,
+                      "y" : 0
+                    },
+                    "fc466616" : {
+                      "i" : "fc466616",
+                      "h" : 5,
+                      "w" : 17,
+                      "x" : 7,
+                      "y" : 9
+                    }
+                  },
+                  "items" : {
+                    "b8f6dd53" : {
+                      "compType" : "image",
+                      "comp" : {
+                        "sourceMode" : "standard",
+                        "src" : "{{currentItem.cover}}",
+                        "iconScoutAsset" : {
+                          "uuid" : "",
+                          "value" : "",
+                          "preview" : ""
+                        },
+                        "clipPath" : "none",
+                        "autoHeight" : "fixed",
+                        "restrictPaddingOnRotation" : "image",
+                        "enableOverflow" : false,
+                        "aspectRatio" : "16 / 9",
+                        "placement" : "top",
+                        "overflow" : "hidden",
+                        "positionX" : "center",
+                        "positionY" : "center",
+                        "showDataLoadingIndicators" : false,
+                        "preventStyleOverwriting" : false,
+                        "appliedThemeId" : "",
+                        "version" : "latest"
+                      },
+                      "name" : "image1"
+                    },
+                    "4f7027b0" : {
+                      "compType" : "link",
+                      "comp" : {
+                        "text" : "{{i+1}}. {{currentItem.title}}",
+                        "onEvent" : [ {
+                          "name" : "click",
+                          "handler" : {
+                            "compType" : "goToURL",
+                            "comp" : {
+                              "url" : "{{currentItem.url}}",
+                              "query" : [ { } ],
+                              "hash" : [ { } ],
+                              "inNewTab" : true
+                            },
+                            "condition" : "",
+                            "slowdown" : "debounce",
+                            "delay" : ""
+                          }
+                        } ],
+                        "showDataLoadingIndicators" : false,
+                        "preventStyleOverwriting" : false,
+                        "appliedThemeId" : "",
+                        "version" : "latest"
+                      },
+                      "name" : "link1"
+                    },
+                    "fc466616" : {
+                      "compType" : "rating",
+                      "comp" : {
+                        "defaultValue" : "{{currentItem.rate / 2}}",
+                        "value" : "",
+                        "max" : "5",
+                        "label" : {
+                          "text" : "",
+                          "width" : "33",
+                          "widthUnit" : "%",
+                          "position" : "row",
+                          "align" : "right"
+                        },
+                        "allowHalf" : true,
+                        "disabled" : "true",
+                        "showDataLoadingIndicators" : false,
+                        "preventStyleOverwriting" : false,
+                        "appliedThemeId" : "",
+                        "version" : "latest"
+                      },
+                      "name" : "rating1"
+                    }
+                  }
+                },
+                "autoHeight" : "auto",
+                "showVerticalScrollbar" : false,
+                "showHorizontalScrollbar" : false,
+                "horizontalGridCells" : 24,
+                "scrollbars" : false,
+                "pagination" : {
+                  "changeablePageSize" : null,
+                  "pageSize" : "6",
+                  "pageSizeOptions" : "[5, 10, 20, 50]"
+                },
+                "horizontal" : false,
+                "minHorizontalWidth" : "100px",
+                "enableSorting" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "listView1"
+            }
+          }
+        },
+        "containerSize" : {
+          "height" : 57,
+          "width" : 24
+        },
+        "containerRowCount" : 0,
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "queries" : [ {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "select * from students",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "id" : "36urcyz7q8rvlf8ql5o5xa5m",
+      "name" : "query1",
+      "order" : 1752720414335,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : true,
+      "externalToken" : "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTI3MjA1MjMsImV4cCI6MTc1MjcyMzUyMywib3JnYW5pemF0aW9uSWQiOiI2ODU4YzNkNTU5NzdhNDI0MTU4ZTZhOTEifQ.fa8AN_MxDxyYf2ygN5ne5QGoyfyjPkHpMW32sH_mMAt"
+    } ],
+    "refTree" : {
+      "value" : "",
+      "items" : [ {
+        "value" : "query1"
+      } ]
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  }
+}

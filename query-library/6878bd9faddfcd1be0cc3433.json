@@ -1,0 +1,78 @@
+{
+  "id" : "6878bd9faddfcd1be0cc3433",
+  "updatedAt" : "2025-07-31T08:24:32.825Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "019817a4-b5f1-751c-815c-81f8a8a1d8f0",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Câu 1",
+  "isSecure" : false,
+  "libraryQueryDSL" : {
+    "query" : {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT order_items.product_name, order_items.price, order_items.quantity FROM order_items JOIN orders ON order_items.order_id = orders.order_id WHERE orders.customer_id = 2;",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "6878bd9faddfcd1be0cc3433",
+      "name" : "Câu 1",
+      "order" : 0,
+      "datasourceId" : "6878bd7caddfcd1be0cc3414",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }
+  },
+  "commitId" : null,
+  "changeType" : "UPDATE",
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "6878bd7caddfcd1be0cc3414",
+    "compType" : "mysql",
+    "comp" : {
+      "commandType" : "INSERT",
+      "command" : {
+        "table" : "",
+        "changeSet" : {
+          "compType" : "KEY_VALUE_PAIRS",
+          "comp" : [ {
+            "column" : "",
+            "value" : ""
+          } ]
+        }
+      },
+      "mode" : "SQL",
+      "sql" : "SELECT order_items.product_name, order_items.price, order_items.quantity FROM order_items JOIN orders ON order_items.order_id = orders.order_id WHERE orders.customer_id = 2;",
+      "disablePreparedStatement" : false,
+      "isSecure" : false
+    },
+    "timeout" : ""
+  }
+}

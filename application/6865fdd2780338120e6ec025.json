@@ -1,0 +1,316 @@
+{
+  "id" : "6865fdd2780338120e6ec025",
+  "gid" : "0197ce67-7f35-73de-990c-c0ddd83e4933",
+  "name" : "PreventOverwriting",
+  "applicationType" : 1,
+  "applicationStatus" : "RECYCLED",
+  "editingApplicationDSL" : {
+    "ui" : {
+      "layout" : {
+        "42e8b962" : {
+          "i" : "42e8b962",
+          "h" : 20,
+          "w" : 23,
+          "delayCollision" : true,
+          "x" : 0,
+          "y" : 10,
+          "pos" : 1
+        }
+      },
+      "items" : {
+        "42e8b962" : {
+          "compType" : "responsiveLayout",
+          "comp" : {
+            "columns" : {
+              "manual" : [ {
+                "id" : 0,
+                "label" : "Column1",
+                "key" : "Column1",
+                "minWidth" : "100px",
+                "background" : "#DC1616",
+                "backgroundImage" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR-JLtQd-dIlxSbP5YEw6XMxwL4myhAhhexw&s",
+                "border" : "#332323",
+                "radius" : "100px",
+                "margin" : "100px",
+                "padding" : "100px",
+                "hidden" : "false"
+              }, {
+                "id" : 1,
+                "label" : "Column2",
+                "key" : "Column2",
+                "minWidth" : "",
+                "background" : "",
+                "backgroundImage" : "",
+                "border" : "",
+                "radius" : "",
+                "margin" : "",
+                "padding" : "",
+                "hidden" : "false"
+              } ]
+            },
+            "containers" : {
+              "0" : {
+                "layout" : { }
+              },
+              "1" : {
+                "layout" : { }
+              }
+            },
+            "horizontalGridCells" : 24,
+            "verticalGridCells" : 24,
+            "autoHeight" : "auto",
+            "rowBreak" : true,
+            "useComponentWidth" : true,
+            "matchColumnsHeight" : true,
+            "style" : {
+              "background" : "#EF2301",
+              "border" : "#122156",
+              "padding" : "30px"
+            },
+            "mainScrollbar" : false,
+            "columnPerRowLG" : "4",
+            "columnPerRowMD" : "2",
+            "columnPerRowSM" : "1",
+            "verticalSpacing" : "8",
+            "horizontalSpacing" : "8",
+            "showDataLoadingIndicators" : false,
+            "className" : "testName",
+            "dataTestId" : "testID",
+            "preventStyleOverwriting" : true,
+            "appliedThemeId" : "",
+            "version" : "latest"
+          },
+          "name" : "responsiveLayout2"
+        }
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : true,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "div[data-testid=\"testID\"] .ant-row {\n  background-color: lightgreen;\n}\n\n",
+      "globalCSS" : ""
+    }
+  },
+  "publicToAll" : false,
+  "publicToMarketplace" : false,
+  "agencyProfile" : false,
+  "editingUserId" : "",
+  "lastEditedAt" : "2025-07-03T03:49:38.741Z",
+  "createdAt" : "2025-07-03T03:49:38.758Z",
+  "changeType" : null,
+  "updatedAt" : "2025-07-03T06:36:13.228Z",
+  "createdBy" : "67da2b5cc0a7bf236ab70f0e",
+  "slug" : null,
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "commitId" : null,
+  "lastCommitAt" : null,
+  "editingQueries" : [ ],
+  "editingModules" : [ ],
+  "editingApplicationDSLOrNull" : {
+    "ui" : {
+      "layout" : {
+        "42e8b962" : {
+          "i" : "42e8b962",
+          "h" : 20,
+          "w" : 23,
+          "delayCollision" : true,
+          "x" : 0,
+          "y" : 10,
+          "pos" : 1
+        }
+      },
+      "items" : {
+        "42e8b962" : {
+          "compType" : "responsiveLayout",
+          "comp" : {
+            "columns" : {
+              "manual" : [ {
+                "id" : 0,
+                "label" : "Column1",
+                "key" : "Column1",
+                "minWidth" : "100px",
+                "background" : "#DC1616",
+                "backgroundImage" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR-JLtQd-dIlxSbP5YEw6XMxwL4myhAhhexw&s",
+                "border" : "#332323",
+                "radius" : "100px",
+                "margin" : "100px",
+                "padding" : "100px",
+                "hidden" : "false"
+              }, {
+                "id" : 1,
+                "label" : "Column2",
+                "key" : "Column2",
+                "minWidth" : "",
+                "background" : "",
+                "backgroundImage" : "",
+                "border" : "",
+                "radius" : "",
+                "margin" : "",
+                "padding" : "",
+                "hidden" : "false"
+              } ]
+            },
+            "containers" : {
+              "0" : {
+                "layout" : { }
+              },
+              "1" : {
+                "layout" : { }
+              }
+            },
+            "horizontalGridCells" : 24,
+            "verticalGridCells" : 24,
+            "autoHeight" : "auto",
+            "rowBreak" : true,
+            "useComponentWidth" : true,
+            "matchColumnsHeight" : true,
+            "style" : {
+              "background" : "#EF2301",
+              "border" : "#122156",
+              "padding" : "30px"
+            },
+            "mainScrollbar" : false,
+            "columnPerRowLG" : "4",
+            "columnPerRowMD" : "2",
+            "columnPerRowSM" : "1",
+            "verticalSpacing" : "8",
+            "horizontalSpacing" : "8",
+            "showDataLoadingIndicators" : false,
+            "className" : "testName",
+            "dataTestId" : "testID",
+            "preventStyleOverwriting" : true,
+            "appliedThemeId" : "",
+            "version" : "latest"
+          },
+          "name" : "responsiveLayout2"
+        }
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : true,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "div[data-testid=\"testID\"] .ant-row {\n  background-color: lightgreen;\n}\n\n",
+      "globalCSS" : ""
+    }
+  }
+}

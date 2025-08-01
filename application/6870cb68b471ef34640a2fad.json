@@ -1,0 +1,885 @@
+{
+  "id" : "6870cb68b471ef34640a2fad",
+  "gid" : "0197f89a-9102-7fe0-aa56-7e7e3a560292",
+  "name" : "PBCName",
+  "applicationType" : 3,
+  "applicationStatus" : "NORMAL",
+  "editingApplicationDSL" : {
+    "ui" : {
+      "compType" : "navV2_VNPT",
+      "comp" : {
+        "header" : {
+          "showHeader" : false,
+          "slot" : {
+            "container" : {
+              "layout" : { }
+            }
+          }
+        },
+        "headerHeight" : "100",
+        "dataOptionType" : "manual",
+        "items" : [ {
+          "label" : "Danh mục cơ cấu tổ chức",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6875fe95fc5c2a6d3f9ec3bf",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "910310f"
+        } ],
+        "siderWidth" : "20%",
+        "siderCollapsedWidth" : "20px",
+        "siderCollapsible" : false,
+        "showIconsWhenCollapsed" : "hide",
+        "showIconsmenutabCollapsed" : "show",
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "queries" : [ {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT * FROM Persons",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "id" : "8h8o9snvi30po0zg7lawjlkp",
+      "name" : "query1",
+      "order" : 1752478521856,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : true,
+      "externalToken" : "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTI0Nzc3MTAsImV4cCI6MTc1MjQ4MDcxMCwib3JnYW5pemF0aW9uSWQiOiI2ODU4YzNkNTU5NzdhNDI0MTU4ZTZhOTEifQ.xyF9kF7Mi2-uQNYEctEAB77sJmiYIQxoh8eToYxwwE8"
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT * FROM students",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "id" : "iip4sn2mruqwa3ot885ipfmr",
+      "name" : "query2",
+      "order" : 1752478724480,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : true,
+      "externalToken" : "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTI0Nzc3MTAsImV4cCI6MTc1MjQ4MDcxMCwib3JnYW5pemF0aW9uSWQiOiI2ODU4YzNkNTU5NzdhNDI0MTU4ZTZhOTEifQ.xyF9kF7Mi2-uQNYEctEAB77sJmiYIQxoh8eToYxwwE8"
+    }, {
+      "compType" : "js",
+      "comp" : {
+        "script" : "let a = \"\";\nlet b = a.getById();\nreturn 0;"
+      },
+      "id" : "spmka31yhw3v3k5kh4nk3qwo",
+      "name" : "query3",
+      "order" : 1752564538147,
+      "datasourceId" : "#JS_CODE",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }, {
+      "compType" : "streamApi",
+      "comp" : {
+        "path" : "hhhh"
+      },
+      "id" : "lwdd8c7jsz9r0zowj4ypkde0",
+      "name" : "query4",
+      "order" : 1752564702152,
+      "datasourceId" : "",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }, {
+      "compType" : "postgres",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "lqwr51qvi7d86sy1wwia12r3",
+      "name" : "query5",
+      "order" : 1752564732141,
+      "datasourceId" : "686737fdfeca08083fa968ae",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }, {
+      "compType" : "libraryQuery",
+      "comp" : {
+        "libraryQueryId" : "68678093feca08083fa96f4c",
+        "libraryQueryRecordId" : "latest",
+        "libraryQueryType" : "",
+        "libraryQueryDSL" : null,
+        "externalToken" : "",
+        "isSecure" : false
+      },
+      "id" : "1iyojhtmopy156bh3ch64zhr",
+      "name" : "query6",
+      "order" : 1752564741371,
+      "datasourceId" : "",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    } ],
+    "transformers" : [ {
+      "name" : "transformer1",
+      "script" : "return currentUser.nameaa"
+    } ],
+    "folders" : [ {
+      "id" : "4c5ca88c",
+      "name" : "Thư mục mới1"
+    } ],
+    "refTree" : {
+      "value" : "",
+      "items" : [ {
+        "value" : "4c5ca88c",
+        "items" : [ {
+          "value" : "transformer1"
+        } ]
+      }, {
+        "value" : "query1"
+      }, {
+        "value" : "query2"
+      }, {
+        "value" : "query3"
+      }, {
+        "value" : "query4"
+      }, {
+        "value" : "query5"
+      }, {
+        "value" : "query6"
+      } ]
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  },
+  "publicToAll" : true,
+  "publicToMarketplace" : false,
+  "agencyProfile" : false,
+  "editingUserId" : "67da2b5cc0a7bf236ab70f0e",
+  "lastEditedAt" : "2025-07-15T07:32:27.231Z",
+  "createdAt" : "2025-07-11T08:29:28.725Z",
+  "changeType" : null,
+  "updatedAt" : "2025-07-22T08:47:18.295Z",
+  "createdBy" : "67da2b5cc0a7bf236ab70f0e",
+  "slug" : "sdfsdfsdfsdfsdfdf",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "commitId" : null,
+  "lastCommitAt" : null,
+  "editingQueries" : [ {
+    "id" : "8h8o9snvi30po0zg7lawjlkp",
+    "gid" : null,
+    "name" : "query1",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT * FROM Persons",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "iip4sn2mruqwa3ot885ipfmr",
+    "gid" : null,
+    "name" : "query2",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT * FROM students",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "lwdd8c7jsz9r0zowj4ypkde0",
+    "gid" : null,
+    "name" : "query4",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "",
+      "compType" : "streamApi",
+      "comp" : {
+        "path" : "hhhh"
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "lqwr51qvi7d86sy1wwia12r3",
+    "gid" : null,
+    "name" : "query5",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "686737fdfeca08083fa968ae",
+      "compType" : "postgres",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "1iyojhtmopy156bh3ch64zhr",
+    "gid" : null,
+    "name" : "query6",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "",
+      "compType" : "libraryQuery",
+      "comp" : {
+        "libraryQueryId" : "68678093feca08083fa96f4c",
+        "libraryQueryRecordId" : "latest",
+        "libraryQueryType" : "",
+        "libraryQueryDSL" : null,
+        "externalToken" : "",
+        "isSecure" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : true,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : "68678093feca08083fa96f4c",
+      "libraryQueryRecordId" : "latest",
+      "usingLiveRecord" : true,
+      "usingEditingRecord" : false
+    }
+  }, {
+    "id" : "spmka31yhw3v3k5kh4nk3qwo",
+    "gid" : null,
+    "name" : "query3",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "#JS_CODE",
+      "compType" : "js",
+      "comp" : {
+        "script" : "let a = \"\";\nlet b = a.getById();\nreturn 0;"
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  } ],
+  "editingModules" : [ ],
+  "editingApplicationDSLOrNull" : {
+    "ui" : {
+      "compType" : "navV2_VNPT",
+      "comp" : {
+        "header" : {
+          "showHeader" : false,
+          "slot" : {
+            "container" : {
+              "layout" : { }
+            }
+          }
+        },
+        "headerHeight" : "100",
+        "dataOptionType" : "manual",
+        "items" : [ {
+          "label" : "Danh mục cơ cấu tổ chức",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6875fe95fc5c2a6d3f9ec3bf",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "910310f"
+        } ],
+        "siderWidth" : "20%",
+        "siderCollapsedWidth" : "20px",
+        "siderCollapsible" : false,
+        "showIconsWhenCollapsed" : "hide",
+        "showIconsmenutabCollapsed" : "show",
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "queries" : [ {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT * FROM Persons",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "id" : "8h8o9snvi30po0zg7lawjlkp",
+      "name" : "query1",
+      "order" : 1752478521856,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : true,
+      "externalToken" : "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTI0Nzc3MTAsImV4cCI6MTc1MjQ4MDcxMCwib3JnYW5pemF0aW9uSWQiOiI2ODU4YzNkNTU5NzdhNDI0MTU4ZTZhOTEifQ.xyF9kF7Mi2-uQNYEctEAB77sJmiYIQxoh8eToYxwwE8"
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT * FROM students",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "id" : "iip4sn2mruqwa3ot885ipfmr",
+      "name" : "query2",
+      "order" : 1752478724480,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : true,
+      "externalToken" : "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTI0Nzc3MTAsImV4cCI6MTc1MjQ4MDcxMCwib3JnYW5pemF0aW9uSWQiOiI2ODU4YzNkNTU5NzdhNDI0MTU4ZTZhOTEifQ.xyF9kF7Mi2-uQNYEctEAB77sJmiYIQxoh8eToYxwwE8"
+    }, {
+      "compType" : "js",
+      "comp" : {
+        "script" : "let a = \"\";\nlet b = a.getById();\nreturn 0;"
+      },
+      "id" : "spmka31yhw3v3k5kh4nk3qwo",
+      "name" : "query3",
+      "order" : 1752564538147,
+      "datasourceId" : "#JS_CODE",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }, {
+      "compType" : "streamApi",
+      "comp" : {
+        "path" : "hhhh"
+      },
+      "id" : "lwdd8c7jsz9r0zowj4ypkde0",
+      "name" : "query4",
+      "order" : 1752564702152,
+      "datasourceId" : "",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }, {
+      "compType" : "postgres",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "lqwr51qvi7d86sy1wwia12r3",
+      "name" : "query5",
+      "order" : 1752564732141,
+      "datasourceId" : "686737fdfeca08083fa968ae",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }, {
+      "compType" : "libraryQuery",
+      "comp" : {
+        "libraryQueryId" : "68678093feca08083fa96f4c",
+        "libraryQueryRecordId" : "latest",
+        "libraryQueryType" : "",
+        "libraryQueryDSL" : null,
+        "externalToken" : "",
+        "isSecure" : false
+      },
+      "id" : "1iyojhtmopy156bh3ch64zhr",
+      "name" : "query6",
+      "order" : 1752564741371,
+      "datasourceId" : "",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    } ],
+    "transformers" : [ {
+      "name" : "transformer1",
+      "script" : "return currentUser.nameaa"
+    } ],
+    "folders" : [ {
+      "id" : "4c5ca88c",
+      "name" : "Thư mục mới1"
+    } ],
+    "refTree" : {
+      "value" : "",
+      "items" : [ {
+        "value" : "4c5ca88c",
+        "items" : [ {
+          "value" : "transformer1"
+        } ]
+      }, {
+        "value" : "query1"
+      }, {
+        "value" : "query2"
+      }, {
+        "value" : "query3"
+      }, {
+        "value" : "query4"
+      }, {
+        "value" : "query5"
+      }, {
+        "value" : "query6"
+      } ]
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  }
+}

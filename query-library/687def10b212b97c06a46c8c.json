@@ -1,0 +1,78 @@
+{
+  "id" : "687def10b212b97c06a46c8c",
+  "updatedAt" : "2025-07-21T08:26:43.444Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "01982bed-d7f9-72d8-a6af-a818b91b8f50",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Câu 9 - Lấy chi tiết tất cả mặt hàng trong đơn hàng của customer_id = 1",
+  "isSecure" : false,
+  "libraryQueryDSL" : {
+    "query" : {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT oi.item_id, oi.product_name, oi.quantity, oi.price\nFROM order_items oi\nJOIN orders o ON oi.order_id = o.order_id\nWHERE o.customer_id = 1;",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "687def10b212b97c06a46c8c",
+      "name" : "Câu 9 - Lấy chi tiết tất cả mặt hàng trong đơn hàng của customer_id = 1",
+      "order" : 0,
+      "datasourceId" : "6878bd7caddfcd1be0cc3414",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }
+  },
+  "commitId" : null,
+  "changeType" : null,
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "6878bd7caddfcd1be0cc3414",
+    "compType" : "mysql",
+    "comp" : {
+      "commandType" : "INSERT",
+      "command" : {
+        "table" : "",
+        "changeSet" : {
+          "compType" : "KEY_VALUE_PAIRS",
+          "comp" : [ {
+            "column" : "",
+            "value" : ""
+          } ]
+        }
+      },
+      "mode" : "SQL",
+      "sql" : "SELECT oi.item_id, oi.product_name, oi.quantity, oi.price\nFROM order_items oi\nJOIN orders o ON oi.order_id = o.order_id\nWHERE o.customer_id = 1;",
+      "disablePreparedStatement" : false,
+      "isSecure" : false
+    },
+    "timeout" : ""
+  }
+}

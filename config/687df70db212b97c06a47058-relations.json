@@ -1,0 +1,14 @@
+[ {
+  "id" : "687df71eb212b97c06a47066",
+  "updatedAt" : "2025-07-21T08:15:26.664Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "bizType" : "FOLDER_ELEMENT",
+  "sourceId" : "687df70db212b97c06a47058",
+  "targetId" : "68745d0b2ca29e234472d7fe",
+  "relation" : null,
+  "state" : null,
+  "extParam1" : "",
+  "extParam2" : "",
+  "extParam3" : "",
+  "createTime" : 1753085726664
+} ]

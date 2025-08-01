@@ -1,0 +1,78 @@
+{
+  "id" : "687e0013b212b97c06a473c8",
+  "updatedAt" : "2025-07-23T01:45:12.504Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "01982c30-4dc5-7f8e-85e2-98b26d0417f7",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Câu 23 - Fail",
+  "isSecure" : false,
+  "libraryQueryDSL" : {
+    "query" : {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT o.order_id, o.customer_name, o.order_date, COUNT(oi.item_id) AS item_count\nFROM orders o\nJOIN order_items oi ON o.order_id = oi.order_id\nGROUP BY o.order_id\nHAVING COUNT(oi.item_id) > 1;\n/*\n  Truy vấn lấy danh sách đơn hàng\n  kèm theo thông tin khách hàng\n*/",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "687e0013b212b97c06a473c8",
+      "name" : "Câu 23 - Fail",
+      "order" : 0,
+      "datasourceId" : "6878bd7caddfcd1be0cc3414",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }
+  },
+  "commitId" : null,
+  "changeType" : "UPDATE",
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "6878bd7caddfcd1be0cc3414",
+    "compType" : "mysql",
+    "comp" : {
+      "commandType" : "INSERT",
+      "command" : {
+        "table" : "",
+        "changeSet" : {
+          "compType" : "KEY_VALUE_PAIRS",
+          "comp" : [ {
+            "column" : "",
+            "value" : ""
+          } ]
+        }
+      },
+      "mode" : "SQL",
+      "sql" : "SELECT o.order_id, o.customer_name, o.order_date, COUNT(oi.item_id) AS item_count\nFROM orders o\nJOIN order_items oi ON o.order_id = oi.order_id\nGROUP BY o.order_id\nHAVING COUNT(oi.item_id) > 1;\n/*\n  Truy vấn lấy danh sách đơn hàng\n  kèm theo thông tin khách hàng\n*/",
+      "disablePreparedStatement" : false,
+      "isSecure" : false
+    },
+    "timeout" : ""
+  }
+}

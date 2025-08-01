@@ -1,0 +1,53 @@
+[ {
+  "id" : "68898d12e079e541d9db6e00",
+  "updatedAt" : "2025-07-30T03:10:10.924Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "bizType" : "FOLDER_ELEMENT",
+  "sourceId" : "685e03810554cc671cf74013",
+  "targetId" : "68898d12e079e541d9db6dfe",
+  "relation" : null,
+  "state" : null,
+  "extParam1" : "",
+  "extParam2" : "",
+  "extParam3" : "",
+  "createTime" : 1753845010924
+}, {
+  "id" : "6889ce82e079e541d9db7bd4",
+  "updatedAt" : "2025-07-30T07:49:22.425Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "bizType" : "FOLDER_ELEMENT",
+  "sourceId" : "685e03810554cc671cf74013",
+  "targetId" : "6889ce82e079e541d9db7bd2",
+  "relation" : null,
+  "state" : null,
+  "extParam1" : "",
+  "extParam2" : "",
+  "extParam3" : "",
+  "createTime" : 1753861762425
+}, {
+  "id" : "6889cef4e079e541d9db7c26",
+  "updatedAt" : "2025-07-30T07:51:16.178Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "bizType" : "FOLDER_ELEMENT",
+  "sourceId" : "685e03810554cc671cf74013",
+  "targetId" : "6889cef4e079e541d9db7c24",
+  "relation" : null,
+  "state" : null,
+  "extParam1" : "",
+  "extParam2" : "",
+  "extParam3" : "",
+  "createTime" : 1753861876178
+}, {
+  "id" : "6889e8f5e079e541d9db8b15",
+  "updatedAt" : "2025-07-30T09:42:13.182Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "bizType" : "FOLDER_ELEMENT",
+  "sourceId" : "685e03810554cc671cf74013",
+  "targetId" : "6889e8f5e079e541d9db8b13",
+  "relation" : null,
+  "state" : null,
+  "extParam1" : "",
+  "extParam2" : "",
+  "extParam3" : "",
+  "createTime" : 1753868533182
+} ]

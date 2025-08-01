@@ -1,0 +1,561 @@
+{
+  "id" : "686f3e1bbafc2a5ebd7c2679",
+  "gid" : "0197f28a-9d4d-75b5-8028-2c86a32b7a60",
+  "name" : "FloatTextLayout",
+  "applicationType" : 2,
+  "applicationStatus" : "NORMAL",
+  "editingApplicationDSL" : {
+    "ui" : {
+      "compType" : "module",
+      "comp" : {
+        "events" : {
+          "enableEventTestMessage" : true
+        },
+        "container" : {
+          "layout" : {
+            "456b642" : {
+              "i" : "456b642",
+              "h" : 25,
+              "w" : 13,
+              "delayCollision" : true,
+              "x" : 4,
+              "y" : 6,
+              "pos" : 0
+            },
+            "undefined" : { }
+          },
+          "items" : {
+            "456b642" : {
+              "compType" : "floatTextContainer",
+              "comp" : {
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat faucibus eleifend. Pellentesque eleifend, risus vel sagittis mattis, mauris ipsum tempor sapien, eu lobortis lacus libero a dui. Cras erat felis, rhoncus vestibulum consectetur et, ultrices ut purus. Sed a tortor orci. Vestibulum nec eleifend ante.",
+                "type" : "markdown",
+                "float" : "left",
+                "horizontalAlignment" : "left",
+                "width" : "40",
+                "container" : {
+                  "header" : {
+                    "layout" : {
+                      "add52dd0" : {
+                        "i" : "add52dd0",
+                        "h" : 5,
+                        "w" : 24,
+                        "x" : 0,
+                        "y" : 0
+                      }
+                    },
+                    "items" : {
+                      "add52dd0" : {
+                        "compType" : "text",
+                        "comp" : {
+                          "text" : "### Hello World",
+                          "autoHeight" : "auto",
+                          "type" : "markdown",
+                          "horizontalAlignment" : "left",
+                          "contentScrollBar" : true,
+                          "verticalAlignment" : "center",
+                          "margin" : {
+                            "left" : "",
+                            "right" : "",
+                            "top" : "",
+                            "bottom" : ""
+                          },
+                          "padding" : {
+                            "left" : "",
+                            "right" : "",
+                            "top" : "",
+                            "bottom" : ""
+                          },
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "containerTitle1"
+                      }
+                    }
+                  },
+                  "body" : {
+                    "0" : {
+                      "view" : {
+                        "layout" : {
+                          "787d023a" : {
+                            "i" : "787d023a",
+                            "h" : 21,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 0,
+                            "pos" : 0
+                          }
+                        },
+                        "items" : {
+                          "787d023a" : {
+                            "compType" : "image",
+                            "comp" : {
+                              "sourceMode" : "standard",
+                              "src" : "https://statictuoitre.mediacdn.vn/thumb_w/640/2017/7-1512755474943.jpg",
+                              "iconScoutAsset" : {
+                                "uuid" : "",
+                                "value" : "",
+                                "preview" : ""
+                              },
+                              "onEvent" : [ {
+                                "name" : "click",
+                                "handler" : {
+                                  "compType" : "executeQuery",
+                                  "comp" : {
+                                    "queryName" : "",
+                                    "queryVariables" : [ ]
+                                  },
+                                  "condition" : "",
+                                  "slowdown" : "debounce",
+                                  "delay" : ""
+                                }
+                              } ],
+                              "clipPath" : "none",
+                              "autoHeight" : "fixed",
+                              "restrictPaddingOnRotation" : "image",
+                              "enableOverflow" : false,
+                              "aspectRatio" : "16 / 9",
+                              "placement" : "left",
+                              "overflow" : "hidden",
+                              "positionX" : "center",
+                              "positionY" : "center",
+                              "showDataLoadingIndicators" : false,
+                              "preventStyleOverwriting" : false,
+                              "appliedThemeId" : "",
+                              "version" : "latest"
+                            },
+                            "name" : "image1"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "footer" : {
+                    "layout" : { }
+                  },
+                  "showHeader" : true,
+                  "showBody" : true,
+                  "autoHeight" : "auto",
+                  "showVerticalScrollbar" : false,
+                  "horizontalGridCells" : 24,
+                  "scrollbars" : false,
+                  "style" : {
+                    "borderWidth" : "1px"
+                  },
+                  "appliedThemeId" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "floatTextContainer1"
+            }
+          }
+        },
+        "containerSize" : {
+          "height" : 57,
+          "width" : 24
+        },
+        "containerRowCount" : 0,
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "queries" : [ {
+      "compType" : "js",
+      "comp" : {
+        "script" : "function subtract(a, b) {\n  return a - b;\n}"
+      },
+      "id" : "y0wngshun88utp0c9b47x32s",
+      "name" : "query1",
+      "order" : 1752552355082,
+      "datasourceId" : "#JS_CODE",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    } ],
+    "refTree" : {
+      "value" : "",
+      "items" : [ {
+        "value" : "query1"
+      } ]
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  },
+  "publicToAll" : false,
+  "publicToMarketplace" : false,
+  "agencyProfile" : false,
+  "editingUserId" : "67da2b5cc0a7bf236ab70f0e",
+  "lastEditedAt" : "2025-07-15T04:07:00.578Z",
+  "createdAt" : "2025-07-10T04:14:19.988Z",
+  "changeType" : null,
+  "updatedAt" : "2025-07-15T04:07:00.581Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "slug" : null,
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "commitId" : null,
+  "lastCommitAt" : null,
+  "editingQueries" : [ {
+    "id" : "y0wngshun88utp0c9b47x32s",
+    "gid" : null,
+    "name" : "query1",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "#JS_CODE",
+      "compType" : "js",
+      "comp" : {
+        "script" : "function subtract(a, b) {\n  return a - b;\n}"
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  } ],
+  "editingModules" : [ ],
+  "editingApplicationDSLOrNull" : {
+    "ui" : {
+      "compType" : "module",
+      "comp" : {
+        "events" : {
+          "enableEventTestMessage" : true
+        },
+        "container" : {
+          "layout" : {
+            "456b642" : {
+              "i" : "456b642",
+              "h" : 25,
+              "w" : 13,
+              "delayCollision" : true,
+              "x" : 4,
+              "y" : 6,
+              "pos" : 0
+            },
+            "undefined" : { }
+          },
+          "items" : {
+            "456b642" : {
+              "compType" : "floatTextContainer",
+              "comp" : {
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat faucibus eleifend. Pellentesque eleifend, risus vel sagittis mattis, mauris ipsum tempor sapien, eu lobortis lacus libero a dui. Cras erat felis, rhoncus vestibulum consectetur et, ultrices ut purus. Sed a tortor orci. Vestibulum nec eleifend ante.",
+                "type" : "markdown",
+                "float" : "left",
+                "horizontalAlignment" : "left",
+                "width" : "40",
+                "container" : {
+                  "header" : {
+                    "layout" : {
+                      "add52dd0" : {
+                        "i" : "add52dd0",
+                        "h" : 5,
+                        "w" : 24,
+                        "x" : 0,
+                        "y" : 0
+                      }
+                    },
+                    "items" : {
+                      "add52dd0" : {
+                        "compType" : "text",
+                        "comp" : {
+                          "text" : "### Hello World",
+                          "autoHeight" : "auto",
+                          "type" : "markdown",
+                          "horizontalAlignment" : "left",
+                          "contentScrollBar" : true,
+                          "verticalAlignment" : "center",
+                          "margin" : {
+                            "left" : "",
+                            "right" : "",
+                            "top" : "",
+                            "bottom" : ""
+                          },
+                          "padding" : {
+                            "left" : "",
+                            "right" : "",
+                            "top" : "",
+                            "bottom" : ""
+                          },
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "containerTitle1"
+                      }
+                    }
+                  },
+                  "body" : {
+                    "0" : {
+                      "view" : {
+                        "layout" : {
+                          "787d023a" : {
+                            "i" : "787d023a",
+                            "h" : 21,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 0,
+                            "pos" : 0
+                          }
+                        },
+                        "items" : {
+                          "787d023a" : {
+                            "compType" : "image",
+                            "comp" : {
+                              "sourceMode" : "standard",
+                              "src" : "https://statictuoitre.mediacdn.vn/thumb_w/640/2017/7-1512755474943.jpg",
+                              "iconScoutAsset" : {
+                                "uuid" : "",
+                                "value" : "",
+                                "preview" : ""
+                              },
+                              "onEvent" : [ {
+                                "name" : "click",
+                                "handler" : {
+                                  "compType" : "executeQuery",
+                                  "comp" : {
+                                    "queryName" : "",
+                                    "queryVariables" : [ ]
+                                  },
+                                  "condition" : "",
+                                  "slowdown" : "debounce",
+                                  "delay" : ""
+                                }
+                              } ],
+                              "clipPath" : "none",
+                              "autoHeight" : "fixed",
+                              "restrictPaddingOnRotation" : "image",
+                              "enableOverflow" : false,
+                              "aspectRatio" : "16 / 9",
+                              "placement" : "left",
+                              "overflow" : "hidden",
+                              "positionX" : "center",
+                              "positionY" : "center",
+                              "showDataLoadingIndicators" : false,
+                              "preventStyleOverwriting" : false,
+                              "appliedThemeId" : "",
+                              "version" : "latest"
+                            },
+                            "name" : "image1"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "footer" : {
+                    "layout" : { }
+                  },
+                  "showHeader" : true,
+                  "showBody" : true,
+                  "autoHeight" : "auto",
+                  "showVerticalScrollbar" : false,
+                  "horizontalGridCells" : 24,
+                  "scrollbars" : false,
+                  "style" : {
+                    "borderWidth" : "1px"
+                  },
+                  "appliedThemeId" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "floatTextContainer1"
+            }
+          }
+        },
+        "containerSize" : {
+          "height" : 57,
+          "width" : 24
+        },
+        "containerRowCount" : 0,
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "queries" : [ {
+      "compType" : "js",
+      "comp" : {
+        "script" : "function subtract(a, b) {\n  return a - b;\n}"
+      },
+      "id" : "y0wngshun88utp0c9b47x32s",
+      "name" : "query1",
+      "order" : 1752552355082,
+      "datasourceId" : "#JS_CODE",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    } ],
+    "refTree" : {
+      "value" : "",
+      "items" : [ {
+        "value" : "query1"
+      } ]
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  }
+}

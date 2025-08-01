@@ -1,0 +1,27 @@
+{
+  "id" : "688330d8d61b757a60dbd976",
+  "updatedAt" : "2025-07-25T07:23:04.854Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "01984076-cf0b-76c4-8fee-2883c452e3ab",
+  "name" : "DBMySQL",
+  "type" : "mysql",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "creationSource" : 0,
+  "datasourceStatus" : "NORMAL",
+  "detailConfig" : {
+    "database" : "acp",
+    "username" : "admin",
+    "password" : "4d309f236095a7198a8c776ee591611c03c8577e627539acd6bb6fcfc07c9976",
+    "host" : "10.1.125.46",
+    "port" : 3306,
+    "usingSsl" : false,
+    "serverTimezone" : null,
+    "enableTurnOffPreparedStatement" : false,
+    "extParams" : { },
+    "readonly" : false
+  },
+  "commitId" : null,
+  "changeType" : "CREATE",
+  "lastCommitAt" : null,
+  "n8nCredentialId" : null
+}

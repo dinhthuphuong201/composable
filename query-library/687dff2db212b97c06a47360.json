@@ -1,0 +1,78 @@
+{
+  "id" : "687dff2db212b97c06a47360",
+  "updatedAt" : "2025-07-23T02:27:56.159Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "01982c2c-caba-7552-bda0-2b9519e46751",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Câu 21 - Fail",
+  "isSecure" : false,
+  "libraryQueryDSL" : {
+    "query" : {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT o.customer_name\nFROM orders o\nJOIN order_items oi ON o.order_id = oi.order_id\nWHERE oi.product_name = 'Mouse';",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "687dff2db212b97c06a47360",
+      "name" : "Câu 21 - Fail",
+      "order" : 0,
+      "datasourceId" : "6878bd7caddfcd1be0cc3414",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }
+  },
+  "commitId" : null,
+  "changeType" : "UPDATE",
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "6878bd7caddfcd1be0cc3414",
+    "compType" : "mysql",
+    "comp" : {
+      "commandType" : "INSERT",
+      "command" : {
+        "table" : "",
+        "changeSet" : {
+          "compType" : "KEY_VALUE_PAIRS",
+          "comp" : [ {
+            "column" : "",
+            "value" : ""
+          } ]
+        }
+      },
+      "mode" : "SQL",
+      "sql" : "SELECT o.customer_name\nFROM orders o\nJOIN order_items oi ON o.order_id = oi.order_id\nWHERE oi.product_name = 'Mouse';",
+      "disablePreparedStatement" : false,
+      "isSecure" : false
+    },
+    "timeout" : ""
+  }
+}

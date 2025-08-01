@@ -1,0 +1,3666 @@
+{
+  "id" : "6878a2aeaddfcd1be0cc2983",
+  "gid" : "0198173b-79bd-723c-950b-64f258a2a986",
+  "name" : "PersonPBC",
+  "applicationType" : 2,
+  "applicationStatus" : "NORMAL",
+  "editingApplicationDSL" : {
+    "ui" : {
+      "compType" : "module",
+      "comp" : {
+        "events" : {
+          "enableEventTestMessage" : true
+        },
+        "container" : {
+          "layout" : {
+            "657baa65" : {
+              "i" : "657baa65",
+              "h" : 12,
+              "w" : 20,
+              "x" : 3,
+              "y" : 3,
+              "pos" : 4
+            },
+            "f62c27f9" : {
+              "i" : "f62c27f9",
+              "h" : 6,
+              "w" : 6,
+              "x" : 13.5,
+              "y" : 10,
+              "pos" : 2
+            },
+            "ca62f4ab" : {
+              "i" : "ca62f4ab",
+              "h" : 6,
+              "w" : 1,
+              "x" : 19.5,
+              "y" : 10,
+              "pos" : 5
+            },
+            "eac79251" : {
+              "i" : "eac79251",
+              "h" : 6,
+              "w" : 2.5,
+              "x" : 20.5,
+              "y" : 10,
+              "pos" : 1
+            },
+            "e4449b01" : {
+              "i" : "e4449b01",
+              "h" : 75,
+              "w" : 20,
+              "x" : 3,
+              "y" : 18,
+              "pos" : 0
+            },
+            "undefined" : { }
+          },
+          "items" : {
+            "e4449b01" : {
+              "compType" : "table",
+              "comp" : {
+                "showRowGridBorder" : true,
+                "showHRowGridBorder" : true,
+                "autoHeight" : "auto",
+                "data" : "{{SelectQuery.data}}",
+                "columns" : [ {
+                  "title" : "LastName",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "LastName",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "FirstName",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "FirstName",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "City",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "City",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "PersonID",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "PersonID",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "Address",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "Address",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "id",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "id",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ],
+                  "hide" : true
+                }, {
+                  "title" : "Actions",
+                  "showTitle" : true,
+                  "isCustom" : true,
+                  "dataIndex" : "a0e1a2d8",
+                  "width" : "100",
+                  "autoWidth" : "fixed",
+                  "render" : {
+                    "compType" : "links",
+                    "comp" : {
+                      "options" : {
+                        "manual" : [ {
+                          "label" : "Update",
+                          "icon" : "/icon:regular/pen-to-square",
+                          "showText" : false,
+                          "onClick" : {
+                            "compType" : "executeComp",
+                            "comp" : {
+                              "name" : "modal_update",
+                              "methodName" : "openModal"
+                            },
+                            "condition" : "",
+                            "slowdown" : "debounce",
+                            "delay" : ""
+                          }
+                        }, {
+                          "label" : "Delete",
+                          "icon" : "/icon:solid/trash-can",
+                          "showText" : false,
+                          "onClick" : {
+                            "compType" : "executeComp",
+                            "comp" : {
+                              "name" : "modal_delete",
+                              "methodName" : "openModal"
+                            },
+                            "condition" : "",
+                            "slowdown" : "debounce",
+                            "delay" : ""
+                          }
+                        } ]
+                      }
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                } ],
+                "size" : "middle",
+                "selection" : {
+                  "mode" : "single"
+                },
+                "pagination" : {
+                  "showQuickJumper" : true,
+                  "showSizeChanger" : true,
+                  "hideOnSinglePage" : false,
+                  "changeablePageSize" : 10,
+                  "pageSize" : "[10,20,50]\n",
+                  "total" : "{{CountQuery.data[0].total_record}}",
+                  "pageSizeOptions" : "[10, 20, 50]"
+                },
+                "sort" : [ ],
+                "toolbar" : {
+                  "showRefresh" : true,
+                  "showDownload" : true,
+                  "showFilter" : true,
+                  "position" : "below",
+                  "columnSeparator" : ",",
+                  "showUpdateButtons" : true
+                },
+                "summaryRows" : "1",
+                "hideToolbar" : false,
+                "headerStyle" : {
+                  "text" : "#FFFFFF",
+                  "headerBackground" : "#3377FF",
+                  "textSize" : "16px"
+                },
+                "viewModeResizable" : true,
+                "visibleResizables" : true,
+                "rowAutoHeight" : "auto",
+                "tableAutoHeight" : "auto",
+                "expansion" : {
+                  "slot" : {
+                    "container" : {
+                      "layout" : { }
+                    }
+                  }
+                },
+                "editModeClicks" : "single",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "table_data"
+            },
+            "eac79251" : {
+              "compType" : "button",
+              "comp" : {
+                "text" : "Create New",
+                "type" : "",
+                "onEvent" : [ {
+                  "name" : "click",
+                  "handler" : {
+                    "compType" : "executeComp",
+                    "comp" : {
+                      "name" : "modal_insert",
+                      "methodName" : "openModal"
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "form" : "",
+                "prefixIcon" : "/icon:solid/plus",
+                "iconGap" : "6px",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "button_insert"
+            },
+            "f62c27f9" : {
+              "compType" : "input",
+              "comp" : {
+                "defaultValue" : "",
+                "value" : "",
+                "label" : {
+                  "text" : "",
+                  "width" : "33",
+                  "widthUnit" : "%",
+                  "position" : "row",
+                  "align" : "left"
+                },
+                "placeholder" : "Search\n",
+                "onEvent" : [ {
+                  "name" : "change",
+                  "handler" : {
+                    "compType" : "runScript",
+                    "comp" : {
+                      "script" : "clearTimeout(debounceTimeout);\ndebounceTimeout = setTimeout(() => {\n  table_data.setPage(1);\n}, 200);"
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "validationType" : "Text",
+                "prefixIcon" : "/icon:solid/magnifying-glass",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "input_search"
+            },
+            "657baa65" : {
+              "compType" : "text",
+              "comp" : {
+                "text" : "## Person",
+                "autoHeight" : "auto",
+                "type" : "markdown",
+                "horizontalAlignment" : "left",
+                "contentScrollBar" : true,
+                "verticalAlignment" : "center",
+                "style" : {
+                  "textSize" : "18px"
+                },
+                "margin" : {
+                  "left" : "",
+                  "right" : "",
+                  "top" : "",
+                  "bottom" : ""
+                },
+                "padding" : {
+                  "left" : "",
+                  "right" : "",
+                  "top" : "",
+                  "bottom" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "text_title"
+            },
+            "ca62f4ab" : {
+              "compType" : "controlButton",
+              "comp" : {
+                "iconSize" : "18px",
+                "type" : "",
+                "autoHeight" : "fixed",
+                "aspectRatio" : "1 / 1",
+                "onEvent" : [ {
+                  "name" : "click",
+                  "handler" : {
+                    "compType" : "runScript",
+                    "comp" : {
+                      "script" : "input_search.clearValue(); \n table_data.setPage(1);"
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "form" : "",
+                "prefixIcon" : "/icon:solid/arrows-rotate",
+                "style" : {
+                  "background" : "#FFFFFF\n  "
+                },
+                "restrictPaddingOnRotation" : "controlButton",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "button_refresh"
+            }
+          }
+        },
+        "containerSize" : {
+          "height" : 57,
+          "width" : 24
+        },
+        "containerRowCount" : 0,
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "queries" : [ {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT\n`LastName`,\n `FirstName`,\n `City`,\n `PersonID`,\n `Address`,\n `id`\nFROM Persons\nWHERE ({{input_search.value?.trim()}} = '' OR (`LastName` LIKE '%{{input_search.value?.trim()}}%'))\nLIMIT {{table_data.pageSize}} OFFSET {{table_data.pageOffset}}",
+        "disablePreparedStatement" : false
+      },
+      "id" : "lonponkdoc6ugejd",
+      "name" : "SelectQuery",
+      "order" : 1747280845194,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : ""
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT count(`id`) AS total_record\nFROM Persons\nWHERE ({{input_search.value?.trim()}} = '' OR (`LastName` LIKE '%{{input_search.value?.trim()}}%'))",
+        "disablePreparedStatement" : false
+      },
+      "id" : "4imnuk0ptsqjt3wv",
+      "name" : "CountQuery",
+      "order" : 1747281928289,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "DELETE FROM Persons WHERE `id` = {{table_data.selectedRow.id}}",
+        "disablePreparedStatement" : false
+      },
+      "id" : "5n69zq5tre9yp2kb",
+      "name" : "DeleteQuery",
+      "order" : 1747363932141,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "manual",
+      "onEvent" : [ {
+        "name" : "success",
+        "handler" : {
+          "compType" : "runScript",
+          "comp" : {
+            "script" : "modal_delete.closeModal(); \n input_search.clearValue(); \n table_data.setPage(1);"
+          },
+          "condition" : "",
+          "slowdown" : "debounce",
+          "delay" : ""
+        }
+      } ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : ""
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "Persons",
+          "changeSet" : {
+            "compType" : "OBJECT",
+            "comp" : "{{ form_insert.data }}"
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "INSERT INTO Persons (\n`LastName`,\n`FirstName`,\n`City`,\n`PersonID`,\n`Address`)\nVALUES (\n{{form_insert.data.LastName}},\n{{form_insert.data.FirstName}},\n{{form_insert.data.City}},\n{{form_insert.data.PersonID}},\n{{form_insert.data.Address}})",
+        "disablePreparedStatement" : false
+      },
+      "id" : "hfg4581gk1bqfjck",
+      "name" : "InsertQuery",
+      "order" : 0,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "manual",
+      "onEvent" : [ {
+        "name" : "success",
+        "handler" : {
+          "compType" : "runScript",
+          "comp" : {
+            "script" : "modal_insert.closeModal(); \n input_search.clearValue(); \n table_data.setPage(1);"
+          },
+          "condition" : "",
+          "slowdown" : "debounce",
+          "delay" : ""
+        }
+      } ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : ""
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "Persons",
+          "changeSet" : {
+            "compType" : "OBJECT",
+            "comp" : "{{ form_update.data }}"
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "UPDATE Persons\nSET\n`LastName` = {{form_update.data.LastName}},\n  `FirstName` = {{form_update.data.FirstName}},\n  `City` = {{form_update.data.City}},\n  `PersonID` = {{form_update.data.PersonID}},\n  `Address` = {{form_update.data.Address}}\nWHERE `id` = {{table_data.selectedRow.id}}",
+        "disablePreparedStatement" : false
+      },
+      "id" : "y0feiohgh73kmp5u",
+      "name" : "UpdateQuery",
+      "order" : 0,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "manual",
+      "onEvent" : [ {
+        "name" : "success",
+        "handler" : {
+          "compType" : "runScript",
+          "comp" : {
+            "script" : "modal_update.closeModal(); \n SelectQuery.run();"
+          },
+          "condition" : "",
+          "slowdown" : "debounce",
+          "delay" : ""
+        }
+      } ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : ""
+    } ],
+    "refTree" : {
+      "value" : "",
+      "items" : [ {
+        "value" : "SelectQuery"
+      }, {
+        "value" : "CountQuery"
+      }, {
+        "value" : "DeleteQuery"
+      }, {
+        "value" : "InsertQuery"
+      }, {
+        "value" : "UpdateQuery"
+      } ]
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    }, {
+      "compType" : "modal",
+      "comp" : {
+        "visible" : "",
+        "width" : "800",
+        "horizontalGridCells" : 24,
+        "autoHeight" : "auto",
+        "title" : "Update",
+        "titleAlign" : "left",
+        "modalScrollbar" : false,
+        "maskClosable" : false,
+        "showMask" : true,
+        "toggleClose" : true,
+        "container" : {
+          "layout" : {
+            "7e46d580" : {
+              "i" : "7e46d580",
+              "h" : 56,
+              "w" : 22,
+              "delayCollision" : true,
+              "x" : 1,
+              "y" : 0,
+              "pos" : 0
+            }
+          },
+          "items" : {
+            "7e46d580" : {
+              "compType" : "form",
+              "comp" : {
+                "initialData" : "{{table_data.selectedRow}}",
+                "onEvent" : [ {
+                  "name" : "submit",
+                  "handler" : {
+                    "compType" : "executeQuery",
+                    "comp" : {
+                      "queryName" : "UpdateQuery",
+                      "queryVariables" : [ ]
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "messageType" : "default",
+                "container" : {
+                  "body" : {
+                    "0" : {
+                      "view" : {
+                        "layout" : {
+                          "21d2e1e1" : {
+                            "i" : "21d2e1e1",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 0
+                          },
+                          "9dd77a89" : {
+                            "i" : "9dd77a89",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 6
+                          },
+                          "f9c4fd21" : {
+                            "i" : "f9c4fd21",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 12
+                          },
+                          "2aa3a7de" : {
+                            "i" : "2aa3a7de",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 18
+                          },
+                          "ed730916" : {
+                            "i" : "ed730916",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 24
+                          }
+                        },
+                        "items" : {
+                          "21d2e1e1" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.LastName}}",
+                              "label" : {
+                                "text" : "LastName",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "LastName"
+                            },
+                            "name" : "form_update_LastName"
+                          },
+                          "9dd77a89" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.FirstName}}",
+                              "label" : {
+                                "text" : "FirstName",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "FirstName"
+                            },
+                            "name" : "form_update_FirstName"
+                          },
+                          "f9c4fd21" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.City}}",
+                              "label" : {
+                                "text" : "City",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "City"
+                            },
+                            "name" : "form_update_City"
+                          },
+                          "2aa3a7de" : {
+                            "compType" : "numberInput",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.PersonID}}",
+                              "label" : {
+                                "text" : "PersonID",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "PersonID",
+                              "allowNull" : true
+                            },
+                            "name" : "form_update_PersonID"
+                          },
+                          "ed730916" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.Address}}",
+                              "label" : {
+                                "text" : "Address",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "Address"
+                            },
+                            "name" : "form_update_Address"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "footer" : {
+                    "layout" : {
+                      "d48fb6b1" : {
+                        "i" : "d48fb6b1",
+                        "h" : 6,
+                        "w" : 4,
+                        "x" : 20,
+                        "y" : 6
+                      }
+                    },
+                    "items" : {
+                      "d48fb6b1" : {
+                        "compType" : "button",
+                        "comp" : {
+                          "text" : "Submit",
+                          "type" : "submit",
+                          "form" : "form_update",
+                          "iconGap" : "6px",
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "button_submit_update"
+                      }
+                    }
+                  },
+                  "showHeader" : true,
+                  "showBody" : true,
+                  "showFooter" : true,
+                  "autoHeight" : "auto",
+                  "showVerticalScrollbar" : false,
+                  "horizontalGridCells" : 24,
+                  "scrollbars" : false,
+                  "style" : {
+                    "borderWidth" : "1px"
+                  },
+                  "appliedThemeId" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "form_update"
+            }
+          }
+        },
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      },
+      "name" : "modal_update"
+    }, {
+      "compType" : "modal",
+      "comp" : {
+        "visible" : "",
+        "width" : "800",
+        "horizontalGridCells" : 24,
+        "autoHeight" : "auto",
+        "title" : "Create New",
+        "titleAlign" : "left",
+        "modalScrollbar" : false,
+        "maskClosable" : false,
+        "showMask" : true,
+        "toggleClose" : true,
+        "container" : {
+          "layout" : {
+            "b68b73ff" : {
+              "i" : "b68b73ff",
+              "h" : 56,
+              "w" : 22,
+              "delayCollision" : true,
+              "x" : 1,
+              "y" : 0,
+              "pos" : 0
+            }
+          },
+          "items" : {
+            "b68b73ff" : {
+              "compType" : "form",
+              "comp" : {
+                "onEvent" : [ {
+                  "name" : "submit",
+                  "handler" : {
+                    "compType" : "executeQuery",
+                    "comp" : {
+                      "queryName" : "InsertQuery",
+                      "queryVariables" : [ ]
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "messageType" : "default",
+                "container" : {
+                  "body" : {
+                    "0" : {
+                      "view" : {
+                        "layout" : {
+                          "61e5c6d2" : {
+                            "i" : "61e5c6d2",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 0
+                          },
+                          "80b9447b" : {
+                            "i" : "80b9447b",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 6
+                          },
+                          "abf5a085" : {
+                            "i" : "abf5a085",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 12
+                          },
+                          "da2d0339" : {
+                            "i" : "da2d0339",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 18
+                          },
+                          "2a501d28" : {
+                            "i" : "2a501d28",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 24
+                          }
+                        },
+                        "items" : {
+                          "61e5c6d2" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "label" : {
+                                "text" : "LastName",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "LastName"
+                            },
+                            "name" : "form_insert_LastName"
+                          },
+                          "80b9447b" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "label" : {
+                                "text" : "FirstName",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "FirstName"
+                            },
+                            "name" : "form_insert_FirstName"
+                          },
+                          "abf5a085" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "label" : {
+                                "text" : "City",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "City"
+                            },
+                            "name" : "form_insert_City"
+                          },
+                          "da2d0339" : {
+                            "compType" : "numberInput",
+                            "comp" : {
+                              "label" : {
+                                "text" : "PersonID",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "PersonID",
+                              "allowNull" : true
+                            },
+                            "name" : "form_insert_PersonID"
+                          },
+                          "2a501d28" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "label" : {
+                                "text" : "Address",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "Address"
+                            },
+                            "name" : "form_insert_Address"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "footer" : {
+                    "layout" : {
+                      "aa19bdee" : {
+                        "i" : "aa19bdee",
+                        "h" : 6,
+                        "w" : 4,
+                        "x" : 20,
+                        "y" : 1
+                      }
+                    },
+                    "items" : {
+                      "aa19bdee" : {
+                        "compType" : "button",
+                        "comp" : {
+                          "text" : "Submit",
+                          "type" : "submit",
+                          "form" : "form_insert",
+                          "iconGap" : "6px",
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "buton_submit_insert"
+                      }
+                    }
+                  },
+                  "showHeader" : true,
+                  "showBody" : true,
+                  "showFooter" : true,
+                  "autoHeight" : "auto",
+                  "showVerticalScrollbar" : false,
+                  "horizontalGridCells" : 24,
+                  "scrollbars" : false,
+                  "style" : {
+                    "borderWidth" : "1px"
+                  },
+                  "appliedThemeId" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "form_insert"
+            }
+          }
+        },
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      },
+      "name" : "modal_insert"
+    }, {
+      "compType" : "modal",
+      "comp" : {
+        "visible" : "",
+        "width" : "393.45135498046875",
+        "height" : "159.984375",
+        "horizontalGridCells" : 24,
+        "autoHeight" : "fixed",
+        "title" : "Delete",
+        "titleAlign" : "left",
+        "modalScrollbar" : false,
+        "maskClosable" : false,
+        "showMask" : true,
+        "toggleClose" : true,
+        "container" : {
+          "layout" : {
+            "a8cf3d32" : {
+              "i" : "a8cf3d32",
+              "h" : 6,
+              "w" : 22,
+              "x" : 1,
+              "y" : 1,
+              "pos" : 1
+            },
+            "c91a56ad" : {
+              "i" : "c91a56ad",
+              "h" : 6,
+              "w" : 6,
+              "x" : 17,
+              "y" : 11,
+              "pos" : 2
+            }
+          },
+          "items" : {
+            "a8cf3d32" : {
+              "compType" : "text",
+              "comp" : {
+                "text" : "Are you sure you want to delete this item?",
+                "autoHeight" : "auto",
+                "type" : "markdown",
+                "horizontalAlignment" : "left",
+                "contentScrollBar" : true,
+                "verticalAlignment" : "center",
+                "margin" : {
+                  "left" : "",
+                  "right" : "",
+                  "top" : "",
+                  "bottom" : ""
+                },
+                "padding" : {
+                  "left" : "",
+                  "right" : "",
+                  "top" : "",
+                  "bottom" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "text_delete_confirm"
+            },
+            "c91a56ad" : {
+              "compType" : "button",
+              "comp" : {
+                "text" : "Delete",
+                "type" : "",
+                "onEvent" : [ {
+                  "name" : "click",
+                  "handler" : {
+                    "compType" : "executeQuery",
+                    "comp" : {
+                      "queryName" : "DeleteQuery",
+                      "queryVariables" : [ ]
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "form" : "",
+                "iconGap" : "6px",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "button_delete"
+            }
+          }
+        },
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      },
+      "name" : "modal_delete"
+    } ]
+  },
+  "publicToAll" : false,
+  "publicToMarketplace" : false,
+  "agencyProfile" : false,
+  "editingUserId" : "",
+  "lastEditedAt" : "2025-07-17T07:13:50.525Z",
+  "createdAt" : "2025-07-17T07:13:50.562Z",
+  "changeType" : "CREATE",
+  "updatedAt" : "2025-07-23T10:04:51.499Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "slug" : null,
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "commitId" : null,
+  "lastCommitAt" : null,
+  "editingQueries" : [ {
+    "id" : "hfg4581gk1bqfjck",
+    "gid" : null,
+    "name" : "InsertQuery",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "Persons",
+          "changeSet" : {
+            "compType" : "OBJECT",
+            "comp" : "{{ form_insert.data }}"
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "INSERT INTO Persons (\n`LastName`,\n`FirstName`,\n`City`,\n`PersonID`,\n`Address`)\nVALUES (\n{{form_insert.data.LastName}},\n{{form_insert.data.FirstName}},\n{{form_insert.data.City}},\n{{form_insert.data.PersonID}},\n{{form_insert.data.Address}})",
+        "disablePreparedStatement" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "lonponkdoc6ugejd",
+    "gid" : null,
+    "name" : "SelectQuery",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT\n`LastName`,\n `FirstName`,\n `City`,\n `PersonID`,\n `Address`,\n `id`\nFROM Persons\nWHERE ({{input_search.value?.trim()}} = '' OR (`LastName` LIKE '%{{input_search.value?.trim()}}%'))\nLIMIT {{table_data.pageSize}} OFFSET {{table_data.pageOffset}}",
+        "disablePreparedStatement" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "5n69zq5tre9yp2kb",
+    "gid" : null,
+    "name" : "DeleteQuery",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "DELETE FROM Persons WHERE `id` = {{table_data.selectedRow.id}}",
+        "disablePreparedStatement" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "y0feiohgh73kmp5u",
+    "gid" : null,
+    "name" : "UpdateQuery",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "Persons",
+          "changeSet" : {
+            "compType" : "OBJECT",
+            "comp" : "{{ form_update.data }}"
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "UPDATE Persons\nSET\n`LastName` = {{form_update.data.LastName}},\n  `FirstName` = {{form_update.data.FirstName}},\n  `City` = {{form_update.data.City}},\n  `PersonID` = {{form_update.data.PersonID}},\n  `Address` = {{form_update.data.Address}}\nWHERE `id` = {{table_data.selectedRow.id}}",
+        "disablePreparedStatement" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "4imnuk0ptsqjt3wv",
+    "gid" : null,
+    "name" : "CountQuery",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT count(`id`) AS total_record\nFROM Persons\nWHERE ({{input_search.value?.trim()}} = '' OR (`LastName` LIKE '%{{input_search.value?.trim()}}%'))",
+        "disablePreparedStatement" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  } ],
+  "editingModules" : [ ],
+  "editingApplicationDSLOrNull" : {
+    "ui" : {
+      "compType" : "module",
+      "comp" : {
+        "events" : {
+          "enableEventTestMessage" : true
+        },
+        "container" : {
+          "layout" : {
+            "657baa65" : {
+              "i" : "657baa65",
+              "h" : 12,
+              "w" : 20,
+              "x" : 3,
+              "y" : 3,
+              "pos" : 4
+            },
+            "f62c27f9" : {
+              "i" : "f62c27f9",
+              "h" : 6,
+              "w" : 6,
+              "x" : 13.5,
+              "y" : 10,
+              "pos" : 2
+            },
+            "ca62f4ab" : {
+              "i" : "ca62f4ab",
+              "h" : 6,
+              "w" : 1,
+              "x" : 19.5,
+              "y" : 10,
+              "pos" : 5
+            },
+            "eac79251" : {
+              "i" : "eac79251",
+              "h" : 6,
+              "w" : 2.5,
+              "x" : 20.5,
+              "y" : 10,
+              "pos" : 1
+            },
+            "e4449b01" : {
+              "i" : "e4449b01",
+              "h" : 75,
+              "w" : 20,
+              "x" : 3,
+              "y" : 18,
+              "pos" : 0
+            },
+            "undefined" : { }
+          },
+          "items" : {
+            "e4449b01" : {
+              "compType" : "table",
+              "comp" : {
+                "showRowGridBorder" : true,
+                "showHRowGridBorder" : true,
+                "autoHeight" : "auto",
+                "data" : "{{SelectQuery.data}}",
+                "columns" : [ {
+                  "title" : "LastName",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "LastName",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "FirstName",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "FirstName",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "City",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "City",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "PersonID",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "PersonID",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "Address",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "Address",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                }, {
+                  "title" : "id",
+                  "showTitle" : true,
+                  "isCustom" : false,
+                  "dataIndex" : "id",
+                  "width" : "170",
+                  "autoWidth" : "auto",
+                  "render" : {
+                    "compType" : "text",
+                    "comp" : {
+                      "text" : "{{currentCell}}"
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ],
+                  "hide" : true
+                }, {
+                  "title" : "Actions",
+                  "showTitle" : true,
+                  "isCustom" : true,
+                  "dataIndex" : "a0e1a2d8",
+                  "width" : "100",
+                  "autoWidth" : "fixed",
+                  "render" : {
+                    "compType" : "links",
+                    "comp" : {
+                      "options" : {
+                        "manual" : [ {
+                          "label" : "Update",
+                          "icon" : "/icon:regular/pen-to-square",
+                          "showText" : false,
+                          "onClick" : {
+                            "compType" : "executeComp",
+                            "comp" : {
+                              "name" : "modal_update",
+                              "methodName" : "openModal"
+                            },
+                            "condition" : "",
+                            "slowdown" : "debounce",
+                            "delay" : ""
+                          }
+                        }, {
+                          "label" : "Delete",
+                          "icon" : "/icon:solid/trash-can",
+                          "showText" : false,
+                          "onClick" : {
+                            "compType" : "executeComp",
+                            "comp" : {
+                              "name" : "modal_delete",
+                              "methodName" : "openModal"
+                            },
+                            "condition" : "",
+                            "slowdown" : "debounce",
+                            "delay" : ""
+                          }
+                        } ]
+                      }
+                    }
+                  },
+                  "align" : "left",
+                  "fixed" : "close",
+                  "background" : "",
+                  "margin" : "",
+                  "text" : "",
+                  "border" : "",
+                  "borderWidth" : "",
+                  "radius" : "",
+                  "textSize" : "",
+                  "textWeight" : "normal",
+                  "fontFamily" : "sans-serif",
+                  "fontStyle" : "normal",
+                  "textOverflow" : "ellipsis",
+                  "linkColor" : "#3377ff",
+                  "linkHoverColor" : "",
+                  "linkActiveColor" : "",
+                  "summaryColumns" : [ {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  }, {
+                    "isCustom" : false,
+                    "dataIndex" : "",
+                    "render" : {
+                      "compType" : "text",
+                      "comp" : { }
+                    },
+                    "align" : "left",
+                    "background" : "",
+                    "margin" : "",
+                    "text" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "textSize" : "",
+                    "textWeight" : "normal",
+                    "fontFamily" : "sans-serif",
+                    "fontStyle" : "normal",
+                    "textOverflow" : "ellipsis",
+                    "linkColor" : "#3377ff",
+                    "linkHoverColor" : "",
+                    "linkActiveColor" : ""
+                  } ]
+                } ],
+                "size" : "middle",
+                "selection" : {
+                  "mode" : "single"
+                },
+                "pagination" : {
+                  "showQuickJumper" : true,
+                  "showSizeChanger" : true,
+                  "hideOnSinglePage" : false,
+                  "changeablePageSize" : 10,
+                  "pageSize" : "[10,20,50]\n",
+                  "total" : "{{CountQuery.data[0].total_record}}",
+                  "pageSizeOptions" : "[10, 20, 50]"
+                },
+                "sort" : [ ],
+                "toolbar" : {
+                  "showRefresh" : true,
+                  "showDownload" : true,
+                  "showFilter" : true,
+                  "position" : "below",
+                  "columnSeparator" : ",",
+                  "showUpdateButtons" : true
+                },
+                "summaryRows" : "1",
+                "hideToolbar" : false,
+                "headerStyle" : {
+                  "text" : "#FFFFFF",
+                  "headerBackground" : "#3377FF",
+                  "textSize" : "16px"
+                },
+                "viewModeResizable" : true,
+                "visibleResizables" : true,
+                "rowAutoHeight" : "auto",
+                "tableAutoHeight" : "auto",
+                "expansion" : {
+                  "slot" : {
+                    "container" : {
+                      "layout" : { }
+                    }
+                  }
+                },
+                "editModeClicks" : "single",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "table_data"
+            },
+            "eac79251" : {
+              "compType" : "button",
+              "comp" : {
+                "text" : "Create New",
+                "type" : "",
+                "onEvent" : [ {
+                  "name" : "click",
+                  "handler" : {
+                    "compType" : "executeComp",
+                    "comp" : {
+                      "name" : "modal_insert",
+                      "methodName" : "openModal"
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "form" : "",
+                "prefixIcon" : "/icon:solid/plus",
+                "iconGap" : "6px",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "button_insert"
+            },
+            "f62c27f9" : {
+              "compType" : "input",
+              "comp" : {
+                "defaultValue" : "",
+                "value" : "",
+                "label" : {
+                  "text" : "",
+                  "width" : "33",
+                  "widthUnit" : "%",
+                  "position" : "row",
+                  "align" : "left"
+                },
+                "placeholder" : "Search\n",
+                "onEvent" : [ {
+                  "name" : "change",
+                  "handler" : {
+                    "compType" : "runScript",
+                    "comp" : {
+                      "script" : "clearTimeout(debounceTimeout);\ndebounceTimeout = setTimeout(() => {\n  table_data.setPage(1);\n}, 200);"
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "validationType" : "Text",
+                "prefixIcon" : "/icon:solid/magnifying-glass",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "input_search"
+            },
+            "657baa65" : {
+              "compType" : "text",
+              "comp" : {
+                "text" : "## Person",
+                "autoHeight" : "auto",
+                "type" : "markdown",
+                "horizontalAlignment" : "left",
+                "contentScrollBar" : true,
+                "verticalAlignment" : "center",
+                "style" : {
+                  "textSize" : "18px"
+                },
+                "margin" : {
+                  "left" : "",
+                  "right" : "",
+                  "top" : "",
+                  "bottom" : ""
+                },
+                "padding" : {
+                  "left" : "",
+                  "right" : "",
+                  "top" : "",
+                  "bottom" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "text_title"
+            },
+            "ca62f4ab" : {
+              "compType" : "controlButton",
+              "comp" : {
+                "iconSize" : "18px",
+                "type" : "",
+                "autoHeight" : "fixed",
+                "aspectRatio" : "1 / 1",
+                "onEvent" : [ {
+                  "name" : "click",
+                  "handler" : {
+                    "compType" : "runScript",
+                    "comp" : {
+                      "script" : "input_search.clearValue(); \n table_data.setPage(1);"
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "form" : "",
+                "prefixIcon" : "/icon:solid/arrows-rotate",
+                "style" : {
+                  "background" : "#FFFFFF\n  "
+                },
+                "restrictPaddingOnRotation" : "controlButton",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "button_refresh"
+            }
+          }
+        },
+        "containerSize" : {
+          "height" : 57,
+          "width" : 24
+        },
+        "containerRowCount" : 0,
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "queries" : [ {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT\n`LastName`,\n `FirstName`,\n `City`,\n `PersonID`,\n `Address`,\n `id`\nFROM Persons\nWHERE ({{input_search.value?.trim()}} = '' OR (`LastName` LIKE '%{{input_search.value?.trim()}}%'))\nLIMIT {{table_data.pageSize}} OFFSET {{table_data.pageOffset}}",
+        "disablePreparedStatement" : false
+      },
+      "id" : "lonponkdoc6ugejd",
+      "name" : "SelectQuery",
+      "order" : 1747280845194,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : ""
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT count(`id`) AS total_record\nFROM Persons\nWHERE ({{input_search.value?.trim()}} = '' OR (`LastName` LIKE '%{{input_search.value?.trim()}}%'))",
+        "disablePreparedStatement" : false
+      },
+      "id" : "4imnuk0ptsqjt3wv",
+      "name" : "CountQuery",
+      "order" : 1747281928289,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "automatic",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "DELETE FROM Persons WHERE `id` = {{table_data.selectedRow.id}}",
+        "disablePreparedStatement" : false
+      },
+      "id" : "5n69zq5tre9yp2kb",
+      "name" : "DeleteQuery",
+      "order" : 1747363932141,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "manual",
+      "onEvent" : [ {
+        "name" : "success",
+        "handler" : {
+          "compType" : "runScript",
+          "comp" : {
+            "script" : "modal_delete.closeModal(); \n input_search.clearValue(); \n table_data.setPage(1);"
+          },
+          "condition" : "",
+          "slowdown" : "debounce",
+          "delay" : ""
+        }
+      } ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : ""
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "Persons",
+          "changeSet" : {
+            "compType" : "OBJECT",
+            "comp" : "{{ form_insert.data }}"
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "INSERT INTO Persons (\n`LastName`,\n`FirstName`,\n`City`,\n`PersonID`,\n`Address`)\nVALUES (\n{{form_insert.data.LastName}},\n{{form_insert.data.FirstName}},\n{{form_insert.data.City}},\n{{form_insert.data.PersonID}},\n{{form_insert.data.Address}})",
+        "disablePreparedStatement" : false
+      },
+      "id" : "hfg4581gk1bqfjck",
+      "name" : "InsertQuery",
+      "order" : 0,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "manual",
+      "onEvent" : [ {
+        "name" : "success",
+        "handler" : {
+          "compType" : "runScript",
+          "comp" : {
+            "script" : "modal_insert.closeModal(); \n input_search.clearValue(); \n table_data.setPage(1);"
+          },
+          "condition" : "",
+          "slowdown" : "debounce",
+          "delay" : ""
+        }
+      } ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : ""
+    }, {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "Persons",
+          "changeSet" : {
+            "compType" : "OBJECT",
+            "comp" : "{{ form_update.data }}"
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "UPDATE Persons\nSET\n`LastName` = {{form_update.data.LastName}},\n  `FirstName` = {{form_update.data.FirstName}},\n  `City` = {{form_update.data.City}},\n  `PersonID` = {{form_update.data.PersonID}},\n  `Address` = {{form_update.data.Address}}\nWHERE `id` = {{table_data.selectedRow.id}}",
+        "disablePreparedStatement" : false
+      },
+      "id" : "y0feiohgh73kmp5u",
+      "name" : "UpdateQuery",
+      "order" : 0,
+      "datasourceId" : "68673796feca08083fa968a6",
+      "triggerType" : "manual",
+      "onEvent" : [ {
+        "name" : "success",
+        "handler" : {
+          "compType" : "runScript",
+          "comp" : {
+            "script" : "modal_update.closeModal(); \n SelectQuery.run();"
+          },
+          "condition" : "",
+          "slowdown" : "debounce",
+          "delay" : ""
+        }
+      } ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : ""
+    } ],
+    "refTree" : {
+      "value" : "",
+      "items" : [ {
+        "value" : "SelectQuery"
+      }, {
+        "value" : "CountQuery"
+      }, {
+        "value" : "DeleteQuery"
+      }, {
+        "value" : "InsertQuery"
+      }, {
+        "value" : "UpdateQuery"
+      } ]
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    }, {
+      "compType" : "modal",
+      "comp" : {
+        "visible" : "",
+        "width" : "800",
+        "horizontalGridCells" : 24,
+        "autoHeight" : "auto",
+        "title" : "Update",
+        "titleAlign" : "left",
+        "modalScrollbar" : false,
+        "maskClosable" : false,
+        "showMask" : true,
+        "toggleClose" : true,
+        "container" : {
+          "layout" : {
+            "7e46d580" : {
+              "i" : "7e46d580",
+              "h" : 56,
+              "w" : 22,
+              "delayCollision" : true,
+              "x" : 1,
+              "y" : 0,
+              "pos" : 0
+            }
+          },
+          "items" : {
+            "7e46d580" : {
+              "compType" : "form",
+              "comp" : {
+                "initialData" : "{{table_data.selectedRow}}",
+                "onEvent" : [ {
+                  "name" : "submit",
+                  "handler" : {
+                    "compType" : "executeQuery",
+                    "comp" : {
+                      "queryName" : "UpdateQuery",
+                      "queryVariables" : [ ]
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "messageType" : "default",
+                "container" : {
+                  "body" : {
+                    "0" : {
+                      "view" : {
+                        "layout" : {
+                          "21d2e1e1" : {
+                            "i" : "21d2e1e1",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 0
+                          },
+                          "9dd77a89" : {
+                            "i" : "9dd77a89",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 6
+                          },
+                          "f9c4fd21" : {
+                            "i" : "f9c4fd21",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 12
+                          },
+                          "2aa3a7de" : {
+                            "i" : "2aa3a7de",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 18
+                          },
+                          "ed730916" : {
+                            "i" : "ed730916",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 24
+                          }
+                        },
+                        "items" : {
+                          "21d2e1e1" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.LastName}}",
+                              "label" : {
+                                "text" : "LastName",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "LastName"
+                            },
+                            "name" : "form_update_LastName"
+                          },
+                          "9dd77a89" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.FirstName}}",
+                              "label" : {
+                                "text" : "FirstName",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "FirstName"
+                            },
+                            "name" : "form_update_FirstName"
+                          },
+                          "f9c4fd21" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.City}}",
+                              "label" : {
+                                "text" : "City",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "City"
+                            },
+                            "name" : "form_update_City"
+                          },
+                          "2aa3a7de" : {
+                            "compType" : "numberInput",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.PersonID}}",
+                              "label" : {
+                                "text" : "PersonID",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "PersonID",
+                              "allowNull" : true
+                            },
+                            "name" : "form_update_PersonID"
+                          },
+                          "ed730916" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "defaultValue" : "{{table_data.selectedRow.Address}}",
+                              "label" : {
+                                "text" : "Address",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "Address"
+                            },
+                            "name" : "form_update_Address"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "footer" : {
+                    "layout" : {
+                      "d48fb6b1" : {
+                        "i" : "d48fb6b1",
+                        "h" : 6,
+                        "w" : 4,
+                        "x" : 20,
+                        "y" : 6
+                      }
+                    },
+                    "items" : {
+                      "d48fb6b1" : {
+                        "compType" : "button",
+                        "comp" : {
+                          "text" : "Submit",
+                          "type" : "submit",
+                          "form" : "form_update",
+                          "iconGap" : "6px",
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "button_submit_update"
+                      }
+                    }
+                  },
+                  "showHeader" : true,
+                  "showBody" : true,
+                  "showFooter" : true,
+                  "autoHeight" : "auto",
+                  "showVerticalScrollbar" : false,
+                  "horizontalGridCells" : 24,
+                  "scrollbars" : false,
+                  "style" : {
+                    "borderWidth" : "1px"
+                  },
+                  "appliedThemeId" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "form_update"
+            }
+          }
+        },
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      },
+      "name" : "modal_update"
+    }, {
+      "compType" : "modal",
+      "comp" : {
+        "visible" : "",
+        "width" : "800",
+        "horizontalGridCells" : 24,
+        "autoHeight" : "auto",
+        "title" : "Create New",
+        "titleAlign" : "left",
+        "modalScrollbar" : false,
+        "maskClosable" : false,
+        "showMask" : true,
+        "toggleClose" : true,
+        "container" : {
+          "layout" : {
+            "b68b73ff" : {
+              "i" : "b68b73ff",
+              "h" : 56,
+              "w" : 22,
+              "delayCollision" : true,
+              "x" : 1,
+              "y" : 0,
+              "pos" : 0
+            }
+          },
+          "items" : {
+            "b68b73ff" : {
+              "compType" : "form",
+              "comp" : {
+                "onEvent" : [ {
+                  "name" : "submit",
+                  "handler" : {
+                    "compType" : "executeQuery",
+                    "comp" : {
+                      "queryName" : "InsertQuery",
+                      "queryVariables" : [ ]
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "messageType" : "default",
+                "container" : {
+                  "body" : {
+                    "0" : {
+                      "view" : {
+                        "layout" : {
+                          "61e5c6d2" : {
+                            "i" : "61e5c6d2",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 0
+                          },
+                          "80b9447b" : {
+                            "i" : "80b9447b",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 6
+                          },
+                          "abf5a085" : {
+                            "i" : "abf5a085",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 12
+                          },
+                          "da2d0339" : {
+                            "i" : "da2d0339",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 18
+                          },
+                          "2a501d28" : {
+                            "i" : "2a501d28",
+                            "h" : 6,
+                            "w" : 24,
+                            "x" : 0,
+                            "y" : 24
+                          }
+                        },
+                        "items" : {
+                          "61e5c6d2" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "label" : {
+                                "text" : "LastName",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "LastName"
+                            },
+                            "name" : "form_insert_LastName"
+                          },
+                          "80b9447b" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "label" : {
+                                "text" : "FirstName",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "FirstName"
+                            },
+                            "name" : "form_insert_FirstName"
+                          },
+                          "abf5a085" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "label" : {
+                                "text" : "City",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "City"
+                            },
+                            "name" : "form_insert_City"
+                          },
+                          "da2d0339" : {
+                            "compType" : "numberInput",
+                            "comp" : {
+                              "label" : {
+                                "text" : "PersonID",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "PersonID",
+                              "allowNull" : true
+                            },
+                            "name" : "form_insert_PersonID"
+                          },
+                          "2a501d28" : {
+                            "compType" : "input",
+                            "comp" : {
+                              "label" : {
+                                "text" : "Address",
+                                "width" : "33",
+                                "widthUnit" : "%",
+                                "position" : "row",
+                                "align" : "left"
+                              },
+                              "required" : true,
+                              "formDataKey" : "Address"
+                            },
+                            "name" : "form_insert_Address"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "footer" : {
+                    "layout" : {
+                      "aa19bdee" : {
+                        "i" : "aa19bdee",
+                        "h" : 6,
+                        "w" : 4,
+                        "x" : 20,
+                        "y" : 1
+                      }
+                    },
+                    "items" : {
+                      "aa19bdee" : {
+                        "compType" : "button",
+                        "comp" : {
+                          "text" : "Submit",
+                          "type" : "submit",
+                          "form" : "form_insert",
+                          "iconGap" : "6px",
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "buton_submit_insert"
+                      }
+                    }
+                  },
+                  "showHeader" : true,
+                  "showBody" : true,
+                  "showFooter" : true,
+                  "autoHeight" : "auto",
+                  "showVerticalScrollbar" : false,
+                  "horizontalGridCells" : 24,
+                  "scrollbars" : false,
+                  "style" : {
+                    "borderWidth" : "1px"
+                  },
+                  "appliedThemeId" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "form_insert"
+            }
+          }
+        },
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      },
+      "name" : "modal_insert"
+    }, {
+      "compType" : "modal",
+      "comp" : {
+        "visible" : "",
+        "width" : "393.45135498046875",
+        "height" : "159.984375",
+        "horizontalGridCells" : 24,
+        "autoHeight" : "fixed",
+        "title" : "Delete",
+        "titleAlign" : "left",
+        "modalScrollbar" : false,
+        "maskClosable" : false,
+        "showMask" : true,
+        "toggleClose" : true,
+        "container" : {
+          "layout" : {
+            "a8cf3d32" : {
+              "i" : "a8cf3d32",
+              "h" : 6,
+              "w" : 22,
+              "x" : 1,
+              "y" : 1,
+              "pos" : 1
+            },
+            "c91a56ad" : {
+              "i" : "c91a56ad",
+              "h" : 6,
+              "w" : 6,
+              "x" : 17,
+              "y" : 11,
+              "pos" : 2
+            }
+          },
+          "items" : {
+            "a8cf3d32" : {
+              "compType" : "text",
+              "comp" : {
+                "text" : "Are you sure you want to delete this item?",
+                "autoHeight" : "auto",
+                "type" : "markdown",
+                "horizontalAlignment" : "left",
+                "contentScrollBar" : true,
+                "verticalAlignment" : "center",
+                "margin" : {
+                  "left" : "",
+                  "right" : "",
+                  "top" : "",
+                  "bottom" : ""
+                },
+                "padding" : {
+                  "left" : "",
+                  "right" : "",
+                  "top" : "",
+                  "bottom" : ""
+                },
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "text_delete_confirm"
+            },
+            "c91a56ad" : {
+              "compType" : "button",
+              "comp" : {
+                "text" : "Delete",
+                "type" : "",
+                "onEvent" : [ {
+                  "name" : "click",
+                  "handler" : {
+                    "compType" : "executeQuery",
+                    "comp" : {
+                      "queryName" : "DeleteQuery",
+                      "queryVariables" : [ ]
+                    },
+                    "condition" : "",
+                    "slowdown" : "debounce",
+                    "delay" : ""
+                  }
+                } ],
+                "form" : "",
+                "iconGap" : "6px",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "button_delete"
+            }
+          }
+        },
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      },
+      "name" : "modal_delete"
+    } ]
+  }
+}

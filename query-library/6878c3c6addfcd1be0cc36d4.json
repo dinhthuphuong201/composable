@@ -1,0 +1,78 @@
+{
+  "id" : "6878c3c6addfcd1be0cc36d4",
+  "updatedAt" : "2025-07-21T08:31:02.326Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "019817bc-c051-7ab1-9dc3-208602848f2d",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Câu 6 - Lấy danh sách sản phẩm mà mỗi khách hàng đã mua, bao gồm tên khách hàng và tên sản phẩm",
+  "isSecure" : false,
+  "libraryQueryDSL" : {
+    "query" : {
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT customers.name AS customer_name, order_items.product_name AS product_name FROM orders JOIN customers ON orders.customer_id = customers.customer_id JOIN order_items ON orders.order_id = order_items.order_id;",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "id" : "6878c3c6addfcd1be0cc36d4",
+      "name" : "Câu 6 - Lấy danh sách sản phẩm mà mỗi khách hàng đã mua, bao gồm tên khách hàng và tên sản phẩm",
+      "order" : 0,
+      "datasourceId" : "6878bd7caddfcd1be0cc3414",
+      "triggerType" : "manual",
+      "onEvent" : [ ],
+      "notification" : {
+        "showSuccess" : true,
+        "showFail" : true,
+        "fail" : [ { } ]
+      },
+      "timeout" : "",
+      "confirmationModal" : { },
+      "variables" : [ ],
+      "periodic" : false,
+      "periodicTime" : "",
+      "cancelPrevious" : false,
+      "depQueryName" : "",
+      "delayTime" : "",
+      "isSecure" : false,
+      "externalToken" : ""
+    }
+  },
+  "commitId" : null,
+  "changeType" : null,
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "6878bd7caddfcd1be0cc3414",
+    "compType" : "mysql",
+    "comp" : {
+      "commandType" : "INSERT",
+      "command" : {
+        "table" : "",
+        "changeSet" : {
+          "compType" : "KEY_VALUE_PAIRS",
+          "comp" : [ {
+            "column" : "",
+            "value" : ""
+          } ]
+        }
+      },
+      "mode" : "SQL",
+      "sql" : "SELECT customers.name AS customer_name, order_items.product_name AS product_name FROM orders JOIN customers ON orders.customer_id = customers.customer_id JOIN order_items ON orders.order_id = order_items.order_id;",
+      "disablePreparedStatement" : false,
+      "isSecure" : false
+    },
+    "timeout" : ""
+  }
+}

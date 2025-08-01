@@ -1,0 +1,252 @@
+{
+  "id" : "6878a5fdaddfcd1be0cc2ba9",
+  "gid" : "01981748-655c-7b06-a6bf-527dea5be2ce",
+  "name" : "GenDS",
+  "applicationType" : 3,
+  "applicationStatus" : "NORMAL",
+  "editingApplicationDSL" : {
+    "ui" : {
+      "compType" : "navV2_VNPT",
+      "comp" : {
+        "header" : {
+          "showHeader" : false,
+          "slot" : {
+            "container" : {
+              "layout" : { }
+            }
+          }
+        },
+        "headerHeight" : "100",
+        "dataOptionType" : "manual",
+        "items" : [ {
+          "label" : "Student",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6878a60caddfcd1be0cc2bb8",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "ab58bd0b"
+        } ],
+        "siderWidth" : "20%",
+        "siderCollapsedWidth" : "20px",
+        "siderCollapsible" : false,
+        "showIconsWhenCollapsed" : "hide",
+        "showIconsmenutabCollapsed" : "show",
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  },
+  "publicToAll" : false,
+  "publicToMarketplace" : false,
+  "agencyProfile" : false,
+  "editingUserId" : "686b37008543551b717cb6ab",
+  "lastEditedAt" : "2025-07-17T07:28:17.919Z",
+  "createdAt" : "2025-07-17T07:27:57.292Z",
+  "changeType" : "CREATE",
+  "updatedAt" : "2025-07-30T08:48:23.082Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "slug" : null,
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "commitId" : null,
+  "lastCommitAt" : null,
+  "editingQueries" : [ ],
+  "editingModules" : [ ],
+  "editingApplicationDSLOrNull" : {
+    "ui" : {
+      "compType" : "navV2_VNPT",
+      "comp" : {
+        "header" : {
+          "showHeader" : false,
+          "slot" : {
+            "container" : {
+              "layout" : { }
+            }
+          }
+        },
+        "headerHeight" : "100",
+        "dataOptionType" : "manual",
+        "items" : [ {
+          "label" : "Student",
+          "action" : {
+            "compType" : "openApp",
+            "comp" : {
+              "app" : {
+                "appId" : "6878a60caddfcd1be0cc2bb8",
+                "error" : "",
+                "autoHeight" : "auto",
+                "scrollbars" : false,
+                "loadModuleInDomWhenHide" : false,
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "queryParam" : [ { } ],
+              "hashParam" : [ { } ],
+              "hideWhenNoPermission" : true
+            }
+          },
+          "itemKey" : "ab58bd0b"
+        } ],
+        "siderWidth" : "20%",
+        "siderCollapsedWidth" : "20px",
+        "siderCollapsible" : false,
+        "showIconsWhenCollapsed" : "hide",
+        "showIconsmenutabCollapsed" : "show",
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  }
+}

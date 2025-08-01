@@ -1,0 +1,26 @@
+{
+  "id" : "688b283ea2ad410253af9e5a",
+  "updatedAt" : "2025-07-31T08:24:30.255Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "gid" : "01985f95-3327-76ee-be77-6d308a6aa571",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "name" : "Unnamed1",
+  "isSecure" : null,
+  "libraryQueryDSL" : {
+    "query" : {
+      "triggerType" : "manual",
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql"
+    }
+  },
+  "commitId" : null,
+  "changeType" : "CREATE",
+  "lastCommitAt" : null,
+  "baseQuerySupplier" : { },
+  "query" : {
+    "datasourceId" : "68673796feca08083fa968a6",
+    "compType" : "mysql",
+    "comp" : null,
+    "timeout" : null
+  }
+}

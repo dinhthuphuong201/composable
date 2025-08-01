@@ -1,0 +1,27 @@
+{
+  "id" : "686737fdfeca08083fa968ae",
+  "updatedAt" : "2025-07-04T03:10:37.314Z",
+  "createdBy" : "67da2b5cc0a7bf236ab70f0e",
+  "gid" : "0197d332-b7ca-771b-a4e7-62cdbd74d68f",
+  "name" : "Postgre",
+  "type" : "postgres",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "creationSource" : 0,
+  "datasourceStatus" : "NORMAL",
+  "detailConfig" : {
+    "database" : "acp",
+    "username" : "admin",
+    "password" : "8bc9ab05b20d19c1e39f308c123c0613cbbae51a3aa7ed47a39c12d444ed5ceb",
+    "host" : "10.1.125.46",
+    "port" : 5432,
+    "usingSsl" : false,
+    "serverTimezone" : null,
+    "enableTurnOffPreparedStatement" : false,
+    "extParams" : { },
+    "readonly" : false
+  },
+  "commitId" : null,
+  "changeType" : null,
+  "lastCommitAt" : null,
+  "n8nCredentialId" : null
+}

@@ -1,0 +1,28 @@
+{
+  "id" : "68673824feca08083fa968b4",
+  "updatedAt" : "2025-07-17T08:48:29.839Z",
+  "createdBy" : "67da2b5cc0a7bf236ab70f0e",
+  "gid" : "0197d333-4e5e-733b-9c4d-90482859e799",
+  "name" : "MongoDB",
+  "type" : "mongodb",
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "creationSource" : 0,
+  "datasourceStatus" : "DELETED",
+  "detailConfig" : {
+    "usingUri" : true,
+    "srvMode" : false,
+    "ssl" : false,
+    "uri" : "d4c0f86011a125d65e436fe32ac82e10d039027ce5c6e1867f9195f5c7be83d269be597847a04623a88d2fa02388174465fe45290eaa651cf938874efc93480b0f7e230661b5ddf1f171ad3e2a1731ee0a71ef79b1644803220a4a8f198e4afe",
+    "endpoints" : [ ],
+    "host" : null,
+    "port" : 27017,
+    "database" : null,
+    "username" : "",
+    "password" : null,
+    "authMechanism" : null
+  },
+  "commitId" : null,
+  "changeType" : null,
+  "lastCommitAt" : null,
+  "n8nCredentialId" : null
+}

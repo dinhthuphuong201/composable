@@ -1,0 +1,780 @@
+{
+  "id" : "687de0f3b212b97c06a4661f",
+  "gid" : "01982bb6-b74c-7340-83ba-c0a2d90fb657",
+  "name" : "Test",
+  "applicationType" : 2,
+  "applicationStatus" : "NORMAL",
+  "editingApplicationDSL" : {
+    "ui" : {
+      "compType" : "module",
+      "comp" : {
+        "events" : {
+          "enableEventTestMessage" : true
+        },
+        "container" : {
+          "layout" : {
+            "a9384d29" : {
+              "i" : "a9384d29",
+              "h" : 136,
+              "w" : 24,
+              "delayCollision" : true,
+              "x" : 0,
+              "y" : 6,
+              "pos" : 1
+            }
+          },
+          "items" : {
+            "a9384d29" : {
+              "compType" : "responsiveLayout",
+              "comp" : {
+                "columns" : {
+                  "manual" : [ {
+                    "id" : 0,
+                    "label" : "Column1",
+                    "key" : "Column1",
+                    "minWidth" : "",
+                    "background" : "",
+                    "backgroundImage" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "margin" : "",
+                    "padding" : "",
+                    "hidden" : "false"
+                  }, {
+                    "id" : 1,
+                    "label" : "Column2",
+                    "key" : "Column2",
+                    "minWidth" : "",
+                    "background" : "",
+                    "backgroundImage" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "margin" : "",
+                    "padding" : "",
+                    "hidden" : "false"
+                  } ]
+                },
+                "containers" : {
+                  "0" : {
+                    "layout" : {
+                      "d3c8247a" : {
+                        "i" : "d3c8247a",
+                        "h" : 60,
+                        "w" : 22,
+                        "x" : 0,
+                        "y" : 8,
+                        "pos" : 0
+                      },
+                      "3027791c" : {
+                        "i" : "3027791c",
+                        "h" : 8,
+                        "w" : 7,
+                        "x" : 0,
+                        "y" : 0,
+                        "pos" : 0
+                      }
+                    },
+                    "items" : {
+                      "d3c8247a" : {
+                        "compType" : "calendar",
+                        "comp" : {
+                          "events" : {
+                            "optionType" : "manual",
+                            "manual" : {
+                              "manual" : [ {
+                                "id" : "1",
+                                "label" : "Coding",
+                                "detail" : "Discuss project milestones and deliverables.",
+                                "start" : "2025-07-21 10:00:00",
+                                "end" : "2025-07-21 12:30:00",
+                                "color" : "#079968",
+                                "backgroundColor" : "#ffffff",
+                                "titleColor" : "#000000",
+                                "detailColor" : "#000000",
+                                "titleFontWeight" : "normal",
+                                "titleFontStyle" : "italic",
+                                "detailFontWeight" : "normal",
+                                "detailFontStyle" : "italic",
+                                "animation" : "none",
+                                "animationDelay" : "0s",
+                                "animationDuration" : "0s",
+                                "animationIterationCount" : "0"
+                              }, {
+                                "id" : "2",
+                                "label" : "Rest",
+                                "start" : "2025-07-22",
+                                "end" : "2025-07-23",
+                                "allDay" : true,
+                                "color" : "#079968"
+                              }, {
+                                "id" : "3",
+                                "label" : "event 1",
+                                "resourceId" : "d1",
+                                "start" : "2025-07-21 10:00:00",
+                                "end" : "2025-07-21 17:30:00",
+                                "color" : "#079968"
+                              }, {
+                                "id" : "4",
+                                "label" : "event 5",
+                                "resourceId" : "b",
+                                "start" : "2025-07-21 08:00:00",
+                                "end" : "2025-07-21 16:30:00",
+                                "color" : "#079968"
+                              }, {
+                                "id" : "5",
+                                "label" : "event 3",
+                                "resourceId" : "a",
+                                "start" : "2025-07-21 12:00:00",
+                                "end" : "2025-07-21 21:30:00",
+                                "color" : "#079968"
+                              } ]
+                            },
+                            "mapData" : {
+                              "data" : "[]"
+                            }
+                          },
+                          "resources" : "[\n  {\n    \"id\": \"a\",\n    \"title\": \"Auditorium A\"\n  },\n  {\n    \"id\": \"b\",\n    \"title\": \"Auditorium B\",\n    \"eventColor\": \"green\"\n  },\n  {\n    \"id\": \"d\",\n    \"title\": \"Auditorium D\",\n    \"children\": [\n      {\n        \"id\": \"d1\",\n        \"title\": \"Room D1\"\n      },\n      {\n        \"id\": \"d2\",\n        \"title\": \"Room D2\"\n      }\n    ]\n  }\n]",
+                          "resourceName" : "Rooms",
+                          "editable" : true,
+                          "showEventTime" : true,
+                          "showWeekends" : true,
+                          "showAllDay" : true,
+                          "defaultDate" : "{{ new Date() }}",
+                          "firstDay" : "1",
+                          "locale" : "en-gb",
+                          "dayMaxEvents" : "2",
+                          "eventMaxStack" : "0",
+                          "licenseKey" : "",
+                          "currentFreeView" : "timeGridWeek",
+                          "currentPremiumView" : "resourceTimelineDay",
+                          "showVerticalScrollbar" : false,
+                          "showResourceEventsInFreeView" : false,
+                          "inputFormat" : "YYYY-MM-DD HH:mm:ss",
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "calendar1"
+                      },
+                      "3027791c" : {
+                        "compType" : "text",
+                        "comp" : {
+                          "text" : "### 👋 Hello, {{currentUser.name}}",
+                          "autoHeight" : "auto",
+                          "type" : "markdown",
+                          "horizontalAlignment" : "left",
+                          "contentScrollBar" : true,
+                          "verticalAlignment" : "center",
+                          "margin" : {
+                            "left" : "",
+                            "right" : "",
+                            "top" : "",
+                            "bottom" : ""
+                          },
+                          "padding" : {
+                            "left" : "",
+                            "right" : "",
+                            "top" : "",
+                            "bottom" : ""
+                          },
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "text1"
+                      }
+                    }
+                  },
+                  "1" : {
+                    "layout" : {
+                      "23c0059b" : {
+                        "i" : "23c0059b",
+                        "h" : 60,
+                        "w" : 21,
+                        "x" : 3,
+                        "y" : 0,
+                        "pos" : 0
+                      }
+                    },
+                    "items" : {
+                      "23c0059b" : {
+                        "compType" : "calendar",
+                        "comp" : {
+                          "events" : {
+                            "optionType" : "manual",
+                            "manual" : {
+                              "manual" : [ {
+                                "id" : "1",
+                                "label" : "Coding",
+                                "detail" : "Discuss project milestones and deliverables.",
+                                "start" : "2025-07-21 10:00:00",
+                                "end" : "2025-07-21 12:30:00",
+                                "color" : "#079968",
+                                "backgroundColor" : "#ffffff",
+                                "titleColor" : "#000000",
+                                "detailColor" : "#000000",
+                                "titleFontWeight" : "normal",
+                                "titleFontStyle" : "italic",
+                                "detailFontWeight" : "normal",
+                                "detailFontStyle" : "italic",
+                                "animation" : "none",
+                                "animationDelay" : "0s",
+                                "animationDuration" : "0s",
+                                "animationIterationCount" : "0"
+                              }, {
+                                "id" : "2",
+                                "label" : "Rest",
+                                "start" : "2025-07-22",
+                                "end" : "2025-07-23",
+                                "allDay" : true,
+                                "color" : "#079968"
+                              }, {
+                                "id" : "3",
+                                "label" : "event 1",
+                                "resourceId" : "d1",
+                                "start" : "2025-07-21 10:00:00",
+                                "end" : "2025-07-21 17:30:00",
+                                "color" : "#079968"
+                              }, {
+                                "id" : "4",
+                                "label" : "event 5",
+                                "resourceId" : "b",
+                                "start" : "2025-07-21 08:00:00",
+                                "end" : "2025-07-21 16:30:00",
+                                "color" : "#079968"
+                              }, {
+                                "id" : "5",
+                                "label" : "event 3",
+                                "resourceId" : "a",
+                                "start" : "2025-07-21 12:00:00",
+                                "end" : "2025-07-21 21:30:00",
+                                "color" : "#079968"
+                              } ]
+                            },
+                            "mapData" : {
+                              "data" : "[]"
+                            }
+                          },
+                          "resources" : "[\n  {\n    \"id\": \"a\",\n    \"title\": \"Auditorium A\"\n  },\n  {\n    \"id\": \"b\",\n    \"title\": \"Auditorium B\",\n    \"eventColor\": \"green\"\n  },\n  {\n    \"id\": \"d\",\n    \"title\": \"Auditorium D\",\n    \"children\": [\n      {\n        \"id\": \"d1\",\n        \"title\": \"Room D1\"\n      },\n      {\n        \"id\": \"d2\",\n        \"title\": \"Room D2\"\n      }\n    ]\n  }\n]",
+                          "resourceName" : "Rooms",
+                          "editable" : true,
+                          "showEventTime" : true,
+                          "showWeekends" : true,
+                          "showAllDay" : true,
+                          "defaultDate" : "{{ new Date() }}",
+                          "firstDay" : "1",
+                          "locale" : "en-gb",
+                          "dayMaxEvents" : "2",
+                          "eventMaxStack" : "0",
+                          "licenseKey" : "",
+                          "currentFreeView" : "timeGridWeek",
+                          "currentPremiumView" : "resourceTimelineDay",
+                          "showVerticalScrollbar" : false,
+                          "showResourceEventsInFreeView" : false,
+                          "inputFormat" : "YYYY-MM-DD HH:mm:ss",
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "calendar2"
+                      }
+                    }
+                  }
+                },
+                "horizontalGridCells" : 24,
+                "verticalGridCells" : 24,
+                "autoHeight" : "auto",
+                "rowBreak" : true,
+                "useComponentWidth" : true,
+                "matchColumnsHeight" : true,
+                "mainScrollbar" : false,
+                "columnPerRowLG" : "4",
+                "columnPerRowMD" : "2",
+                "columnPerRowSM" : "1",
+                "verticalSpacing" : "8",
+                "horizontalSpacing" : "8",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "responsiveLayout1"
+            }
+          }
+        },
+        "containerSize" : {
+          "height" : 78,
+          "width" : 24
+        },
+        "containerRowCount" : 0,
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  },
+  "publicToAll" : false,
+  "publicToMarketplace" : false,
+  "agencyProfile" : false,
+  "editingUserId" : "686b37008543551b717cb6ab",
+  "lastEditedAt" : "2025-07-21T06:42:25.230Z",
+  "createdAt" : "2025-07-21T06:40:51.536Z",
+  "changeType" : "CREATE",
+  "updatedAt" : "2025-07-30T08:54:31.357Z",
+  "createdBy" : "686b37008543551b717cb6ab",
+  "slug" : null,
+  "organizationId" : "6858c3d55977a424158e6a91",
+  "commitId" : null,
+  "lastCommitAt" : null,
+  "editingQueries" : [ ],
+  "editingModules" : [ ],
+  "editingApplicationDSLOrNull" : {
+    "ui" : {
+      "compType" : "module",
+      "comp" : {
+        "events" : {
+          "enableEventTestMessage" : true
+        },
+        "container" : {
+          "layout" : {
+            "a9384d29" : {
+              "i" : "a9384d29",
+              "h" : 136,
+              "w" : 24,
+              "delayCollision" : true,
+              "x" : 0,
+              "y" : 6,
+              "pos" : 1
+            }
+          },
+          "items" : {
+            "a9384d29" : {
+              "compType" : "responsiveLayout",
+              "comp" : {
+                "columns" : {
+                  "manual" : [ {
+                    "id" : 0,
+                    "label" : "Column1",
+                    "key" : "Column1",
+                    "minWidth" : "",
+                    "background" : "",
+                    "backgroundImage" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "margin" : "",
+                    "padding" : "",
+                    "hidden" : "false"
+                  }, {
+                    "id" : 1,
+                    "label" : "Column2",
+                    "key" : "Column2",
+                    "minWidth" : "",
+                    "background" : "",
+                    "backgroundImage" : "",
+                    "border" : "",
+                    "radius" : "",
+                    "margin" : "",
+                    "padding" : "",
+                    "hidden" : "false"
+                  } ]
+                },
+                "containers" : {
+                  "0" : {
+                    "layout" : {
+                      "d3c8247a" : {
+                        "i" : "d3c8247a",
+                        "h" : 60,
+                        "w" : 22,
+                        "x" : 0,
+                        "y" : 8,
+                        "pos" : 0
+                      },
+                      "3027791c" : {
+                        "i" : "3027791c",
+                        "h" : 8,
+                        "w" : 7,
+                        "x" : 0,
+                        "y" : 0,
+                        "pos" : 0
+                      }
+                    },
+                    "items" : {
+                      "d3c8247a" : {
+                        "compType" : "calendar",
+                        "comp" : {
+                          "events" : {
+                            "optionType" : "manual",
+                            "manual" : {
+                              "manual" : [ {
+                                "id" : "1",
+                                "label" : "Coding",
+                                "detail" : "Discuss project milestones and deliverables.",
+                                "start" : "2025-07-21 10:00:00",
+                                "end" : "2025-07-21 12:30:00",
+                                "color" : "#079968",
+                                "backgroundColor" : "#ffffff",
+                                "titleColor" : "#000000",
+                                "detailColor" : "#000000",
+                                "titleFontWeight" : "normal",
+                                "titleFontStyle" : "italic",
+                                "detailFontWeight" : "normal",
+                                "detailFontStyle" : "italic",
+                                "animation" : "none",
+                                "animationDelay" : "0s",
+                                "animationDuration" : "0s",
+                                "animationIterationCount" : "0"
+                              }, {
+                                "id" : "2",
+                                "label" : "Rest",
+                                "start" : "2025-07-22",
+                                "end" : "2025-07-23",
+                                "allDay" : true,
+                                "color" : "#079968"
+                              }, {
+                                "id" : "3",
+                                "label" : "event 1",
+                                "resourceId" : "d1",
+                                "start" : "2025-07-21 10:00:00",
+                                "end" : "2025-07-21 17:30:00",
+                                "color" : "#079968"
+                              }, {
+                                "id" : "4",
+                                "label" : "event 5",
+                                "resourceId" : "b",
+                                "start" : "2025-07-21 08:00:00",
+                                "end" : "2025-07-21 16:30:00",
+                                "color" : "#079968"
+                              }, {
+                                "id" : "5",
+                                "label" : "event 3",
+                                "resourceId" : "a",
+                                "start" : "2025-07-21 12:00:00",
+                                "end" : "2025-07-21 21:30:00",
+                                "color" : "#079968"
+                              } ]
+                            },
+                            "mapData" : {
+                              "data" : "[]"
+                            }
+                          },
+                          "resources" : "[\n  {\n    \"id\": \"a\",\n    \"title\": \"Auditorium A\"\n  },\n  {\n    \"id\": \"b\",\n    \"title\": \"Auditorium B\",\n    \"eventColor\": \"green\"\n  },\n  {\n    \"id\": \"d\",\n    \"title\": \"Auditorium D\",\n    \"children\": [\n      {\n        \"id\": \"d1\",\n        \"title\": \"Room D1\"\n      },\n      {\n        \"id\": \"d2\",\n        \"title\": \"Room D2\"\n      }\n    ]\n  }\n]",
+                          "resourceName" : "Rooms",
+                          "editable" : true,
+                          "showEventTime" : true,
+                          "showWeekends" : true,
+                          "showAllDay" : true,
+                          "defaultDate" : "{{ new Date() }}",
+                          "firstDay" : "1",
+                          "locale" : "en-gb",
+                          "dayMaxEvents" : "2",
+                          "eventMaxStack" : "0",
+                          "licenseKey" : "",
+                          "currentFreeView" : "timeGridWeek",
+                          "currentPremiumView" : "resourceTimelineDay",
+                          "showVerticalScrollbar" : false,
+                          "showResourceEventsInFreeView" : false,
+                          "inputFormat" : "YYYY-MM-DD HH:mm:ss",
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "calendar1"
+                      },
+                      "3027791c" : {
+                        "compType" : "text",
+                        "comp" : {
+                          "text" : "### 👋 Hello, {{currentUser.name}}",
+                          "autoHeight" : "auto",
+                          "type" : "markdown",
+                          "horizontalAlignment" : "left",
+                          "contentScrollBar" : true,
+                          "verticalAlignment" : "center",
+                          "margin" : {
+                            "left" : "",
+                            "right" : "",
+                            "top" : "",
+                            "bottom" : ""
+                          },
+                          "padding" : {
+                            "left" : "",
+                            "right" : "",
+                            "top" : "",
+                            "bottom" : ""
+                          },
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "text1"
+                      }
+                    }
+                  },
+                  "1" : {
+                    "layout" : {
+                      "23c0059b" : {
+                        "i" : "23c0059b",
+                        "h" : 60,
+                        "w" : 21,
+                        "x" : 3,
+                        "y" : 0,
+                        "pos" : 0
+                      }
+                    },
+                    "items" : {
+                      "23c0059b" : {
+                        "compType" : "calendar",
+                        "comp" : {
+                          "events" : {
+                            "optionType" : "manual",
+                            "manual" : {
+                              "manual" : [ {
+                                "id" : "1",
+                                "label" : "Coding",
+                                "detail" : "Discuss project milestones and deliverables.",
+                                "start" : "2025-07-21 10:00:00",
+                                "end" : "2025-07-21 12:30:00",
+                                "color" : "#079968",
+                                "backgroundColor" : "#ffffff",
+                                "titleColor" : "#000000",
+                                "detailColor" : "#000000",
+                                "titleFontWeight" : "normal",
+                                "titleFontStyle" : "italic",
+                                "detailFontWeight" : "normal",
+                                "detailFontStyle" : "italic",
+                                "animation" : "none",
+                                "animationDelay" : "0s",
+                                "animationDuration" : "0s",
+                                "animationIterationCount" : "0"
+                              }, {
+                                "id" : "2",
+                                "label" : "Rest",
+                                "start" : "2025-07-22",
+                                "end" : "2025-07-23",
+                                "allDay" : true,
+                                "color" : "#079968"
+                              }, {
+                                "id" : "3",
+                                "label" : "event 1",
+                                "resourceId" : "d1",
+                                "start" : "2025-07-21 10:00:00",
+                                "end" : "2025-07-21 17:30:00",
+                                "color" : "#079968"
+                              }, {
+                                "id" : "4",
+                                "label" : "event 5",
+                                "resourceId" : "b",
+                                "start" : "2025-07-21 08:00:00",
+                                "end" : "2025-07-21 16:30:00",
+                                "color" : "#079968"
+                              }, {
+                                "id" : "5",
+                                "label" : "event 3",
+                                "resourceId" : "a",
+                                "start" : "2025-07-21 12:00:00",
+                                "end" : "2025-07-21 21:30:00",
+                                "color" : "#079968"
+                              } ]
+                            },
+                            "mapData" : {
+                              "data" : "[]"
+                            }
+                          },
+                          "resources" : "[\n  {\n    \"id\": \"a\",\n    \"title\": \"Auditorium A\"\n  },\n  {\n    \"id\": \"b\",\n    \"title\": \"Auditorium B\",\n    \"eventColor\": \"green\"\n  },\n  {\n    \"id\": \"d\",\n    \"title\": \"Auditorium D\",\n    \"children\": [\n      {\n        \"id\": \"d1\",\n        \"title\": \"Room D1\"\n      },\n      {\n        \"id\": \"d2\",\n        \"title\": \"Room D2\"\n      }\n    ]\n  }\n]",
+                          "resourceName" : "Rooms",
+                          "editable" : true,
+                          "showEventTime" : true,
+                          "showWeekends" : true,
+                          "showAllDay" : true,
+                          "defaultDate" : "{{ new Date() }}",
+                          "firstDay" : "1",
+                          "locale" : "en-gb",
+                          "dayMaxEvents" : "2",
+                          "eventMaxStack" : "0",
+                          "licenseKey" : "",
+                          "currentFreeView" : "timeGridWeek",
+                          "currentPremiumView" : "resourceTimelineDay",
+                          "showVerticalScrollbar" : false,
+                          "showResourceEventsInFreeView" : false,
+                          "inputFormat" : "YYYY-MM-DD HH:mm:ss",
+                          "showDataLoadingIndicators" : false,
+                          "preventStyleOverwriting" : false,
+                          "appliedThemeId" : "",
+                          "version" : "latest"
+                        },
+                        "name" : "calendar2"
+                      }
+                    }
+                  }
+                },
+                "horizontalGridCells" : 24,
+                "verticalGridCells" : 24,
+                "autoHeight" : "auto",
+                "rowBreak" : true,
+                "useComponentWidth" : true,
+                "matchColumnsHeight" : true,
+                "mainScrollbar" : false,
+                "columnPerRowLG" : "4",
+                "columnPerRowMD" : "2",
+                "columnPerRowSM" : "1",
+                "verticalSpacing" : "8",
+                "horizontalSpacing" : "8",
+                "showDataLoadingIndicators" : false,
+                "preventStyleOverwriting" : false,
+                "appliedThemeId" : "",
+                "version" : "latest"
+              },
+              "name" : "responsiveLayout1"
+            }
+          }
+        },
+        "containerSize" : {
+          "height" : 78,
+          "width" : 24
+        },
+        "containerRowCount" : 0,
+        "showDataLoadingIndicators" : false,
+        "preventStyleOverwriting" : false,
+        "appliedThemeId" : "",
+        "version" : "latest"
+      }
+    },
+    "refTree" : {
+      "value" : ""
+    },
+    "hooks" : [ {
+      "compType" : "urlParams",
+      "comp" : { },
+      "name" : "url"
+    }, {
+      "compType" : "dayJsLib",
+      "comp" : { },
+      "name" : "dayjs"
+    }, {
+      "compType" : "lodashJsLib",
+      "comp" : { },
+      "name" : "_"
+    }, {
+      "compType" : "utils",
+      "comp" : { },
+      "name" : "utils"
+    }, {
+      "compType" : "message",
+      "comp" : { },
+      "name" : "message"
+    }, {
+      "compType" : "toast",
+      "comp" : { },
+      "name" : "toast"
+    }, {
+      "compType" : "localStorage",
+      "comp" : { },
+      "name" : "localStorage"
+    }, {
+      "compType" : "currentUser",
+      "comp" : { },
+      "name" : "currentUser"
+    }, {
+      "compType" : "screenInfo",
+      "comp" : { },
+      "name" : "screenInfo"
+    }, {
+      "compType" : "theme",
+      "comp" : { },
+      "name" : "theme"
+    } ],
+    "settings" : {
+      "title" : "",
+      "description" : "",
+      "category" : "Business",
+      "showHeaderInPublic" : false,
+      "themeId" : "default",
+      "preventAppStylesOverwriting" : true,
+      "disableCollision" : false,
+      "lowcoderCompVersion" : "latest",
+      "maxWidth" : {
+        "dropdown" : "1920",
+        "input" : 0
+      },
+      "gridRowCount" : "Infinity",
+      "gridPaddingX" : "20",
+      "gridPaddingY" : "20"
+    },
+    "preload" : {
+      "script" : "",
+      "css" : "",
+      "globalCSS" : ""
+    }
+  }
+}
