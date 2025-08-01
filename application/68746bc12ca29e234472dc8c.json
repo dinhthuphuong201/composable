@@ -247,48 +247,13 @@
   "lastEditedAt" : "2025-07-14T08:25:22.602Z",
   "createdAt" : "2025-07-14T02:30:25.430Z",
   "changeType" : "NONE",
-  "updatedAt" : "2025-08-01T02:56:31.883Z",
+  "updatedAt" : "2025-08-01T02:56:56.839Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "slug" : null,
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : "git-6f76ab49-626c-4c12-aa83-9d70c7d23a6b",
-  "lastCommitAt" : "2025-08-01T02:56:31.883Z",
+  "commitId" : "git-8e8987e2-3bb5-409a-addc-2d4ee8776873",
+  "lastCommitAt" : "2025-08-01T02:56:56.839Z",
   "editingQueries" : [ {
-    "id" : "clbama53om2n343sioneu4gh",
-    "gid" : null,
-    "name" : "query1",
-    "triggerType" : "automatic",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "",
-          "changeSet" : {
-            "compType" : "KEY_VALUE_PAIRS",
-            "comp" : [ {
-              "column" : "",
-              "value" : ""
-            } ]
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "SELECT * FROM feedback_form",
-        "disablePreparedStatement" : false,
-        "isSecure" : false
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
     "id" : "6veasae27ynu1bxfsdsm6poy",
     "gid" : null,
     "name" : "query2",
@@ -312,6 +277,41 @@
         "sql" : "select * from feedback_form",
         "disablePreparedStatement" : false,
         "isSecure" : true
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "clbama53om2n343sioneu4gh",
+    "gid" : null,
+    "name" : "query1",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT * FROM feedback_form",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
       },
       "timeout" : ""
     },
