@@ -1932,13 +1932,150 @@
   "lastEditedAt" : "2025-07-15T03:51:27.747Z",
   "createdAt" : "2025-07-14T07:53:02.505Z",
   "changeType" : "NONE",
-  "updatedAt" : "2025-08-01T02:56:56.828Z",
+  "updatedAt" : "2025-08-01T03:00:36.534Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "slug" : null,
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : "git-8e8987e2-3bb5-409a-addc-2d4ee8776873",
-  "lastCommitAt" : "2025-08-01T02:56:56.828Z",
+  "commitId" : "git-344afb07-21b9-4346-9722-e70ed3a0b95f",
+  "lastCommitAt" : "2025-08-01T03:00:36.534Z",
   "editingQueries" : [ {
+    "id" : "jp471sb65yum2qtd",
+    "gid" : null,
+    "name" : "DeleteQuery",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "DELETE FROM students WHERE `student_id` = {{table_data.selectedRow.student_id}}",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "m0027t8y8ohvb7yu",
+    "gid" : null,
+    "name" : "UpdateQuery",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "students",
+          "changeSet" : {
+            "compType" : "OBJECT",
+            "comp" : "{{ form_update.data }}"
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "UPDATE students\nSET\n`student_id` = {{form_update.data.student_id}},\n  `full_name` = {{form_update.data.full_name}},\n  `birth_date` = STR_TO_DATE({{form_update.data.birth_date}}, '%Y-%m-%d'),\n  `gender` = {{form_update.data.gender}},\n  `average_score` = {{form_update.data.average_score}}\nWHERE `student_id` = {{table_data.selectedRow.student_id}}",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "1yyqmkrwj52i0i5t",
+    "gid" : null,
+    "name" : "CountQuery",
+    "triggerType" : "onQueryExecution",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT count(`student_id`) AS total_record\nFROM students\nWHERE ({{input_search.value?.trim()}} = '' OR (`student_id` LIKE '%{{input_search.value?.trim()}}%'))",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "a9xwawchkfy5pp3f",
+    "gid" : null,
+    "name" : "SelectQuery",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT\n`student_id`,\n `full_name`,\n `birth_date`,\n `gender`,\n `average_score`\nFROM students\nWHERE ({{input_search.value?.trim()}} = '' OR (`student_id` LIKE '%{{input_search.value?.trim()}}%'))\nLIMIT {{table_data.pageSize}} OFFSET {{table_data.pageOffset}}",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
     "id" : "mh0i9wm5dn294ibqu7rzp2g2",
     "gid" : null,
     "name" : "get_Token",
@@ -1999,62 +2136,6 @@
       "usingEditingRecord" : true
     }
   }, {
-    "id" : "jp471sb65yum2qtd",
-    "gid" : null,
-    "name" : "DeleteQuery",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "",
-          "changeSet" : {
-            "compType" : "KEY_VALUE_PAIRS",
-            "comp" : [ {
-              "column" : "",
-              "value" : ""
-            } ]
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "DELETE FROM students WHERE `student_id` = {{table_data.selectedRow.student_id}}",
-        "disablePreparedStatement" : false,
-        "isSecure" : false
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "rqrrtnwi1qr1kfuoke1ku1hj",
-    "gid" : null,
-    "name" : "query1",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "#JS_CODE",
-      "compType" : "js",
-      "comp" : {
-        "script" : "localStorage.setItem(\"token\", state1.value);\nreturn true;"
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
     "id" : "l2petw6xv1d3hdgl",
     "gid" : null,
     "name" : "InsertQuery",
@@ -2087,96 +2168,15 @@
       "usingEditingRecord" : true
     }
   }, {
-    "id" : "a9xwawchkfy5pp3f",
+    "id" : "rqrrtnwi1qr1kfuoke1ku1hj",
     "gid" : null,
-    "name" : "SelectQuery",
-    "triggerType" : "automatic",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "",
-          "changeSet" : {
-            "compType" : "KEY_VALUE_PAIRS",
-            "comp" : [ {
-              "column" : "",
-              "value" : ""
-            } ]
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "SELECT\n`student_id`,\n `full_name`,\n `birth_date`,\n `gender`,\n `average_score`\nFROM students\nWHERE ({{input_search.value?.trim()}} = '' OR (`student_id` LIKE '%{{input_search.value?.trim()}}%'))\nLIMIT {{table_data.pageSize}} OFFSET {{table_data.pageOffset}}",
-        "disablePreparedStatement" : false,
-        "isSecure" : true
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "1yyqmkrwj52i0i5t",
-    "gid" : null,
-    "name" : "CountQuery",
-    "triggerType" : "onQueryExecution",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "",
-          "changeSet" : {
-            "compType" : "KEY_VALUE_PAIRS",
-            "comp" : [ {
-              "column" : "",
-              "value" : ""
-            } ]
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "SELECT count(`student_id`) AS total_record\nFROM students\nWHERE ({{input_search.value?.trim()}} = '' OR (`student_id` LIKE '%{{input_search.value?.trim()}}%'))",
-        "disablePreparedStatement" : false,
-        "isSecure" : false
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "m0027t8y8ohvb7yu",
-    "gid" : null,
-    "name" : "UpdateQuery",
+    "name" : "query1",
     "triggerType" : "manual",
     "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
+      "datasourceId" : "#JS_CODE",
+      "compType" : "js",
       "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "students",
-          "changeSet" : {
-            "compType" : "OBJECT",
-            "comp" : "{{ form_update.data }}"
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "UPDATE students\nSET\n`student_id` = {{form_update.data.student_id}},\n  `full_name` = {{form_update.data.full_name}},\n  `birth_date` = STR_TO_DATE({{form_update.data.birth_date}}, '%Y-%m-%d'),\n  `gender` = {{form_update.data.gender}},\n  `average_score` = {{form_update.data.average_score}}\nWHERE `student_id` = {{table_data.selectedRow.student_id}}",
-        "disablePreparedStatement" : false,
-        "isSecure" : false
+        "script" : "localStorage.setItem(\"token\", state1.value);\nreturn true;"
       },
       "timeout" : ""
     },

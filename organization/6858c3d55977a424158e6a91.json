@@ -1,6 +1,6 @@
 {
   "id" : "6858c3d55977a424158e6a91",
-  "updatedAt" : "2025-08-01T03:00:36.498843351Z",
+  "updatedAt" : "2025-08-01T03:03:37.543493291Z",
   "createdBy" : "67da2b5cc0a7bf236ab70f0e",
   "gid" : "01979abc-f98a-72a6-8872-b3df70432d7d",
   "slug" : null,
@@ -21,8 +21,8 @@
     "PASSWORD_RESET_EMAIL_TEMPLATE" : "<p>Hi, %s<br/>Here is the link to reset your password: %s<br/>Please note that the link will expire after 12 hours.<br/><br/></p>"
   },
   "remoteGitUrl" : "git@github.com:dinhthuphuong201/composable.git",
-  "privateKeyGit" : "-----BEGIN EC PRIVATE KEY-----\nMHgCAQEEIQCMFMxZmTdaBN7fQ+hstkOiS4mXoaDBOsp9zJC0DUayrqAKBggqhkjO\nPQMBB6FEA0IABC2XNLLStNnvdOhBR159MFjZdfW7WVIYxRXNpVctKSTQON2zlrLf\ncLFSAAOycBWerVlEJ5tXV9TyMZ6LL+WWm0k=\n-----END EC PRIVATE KEY-----\n",
-  "publicKeyGit" : "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBC2XNLLStNnvdOhBR159MFjZdfW7WVIYxRXNpVctKSTQON2zlrLfcLFSAAOycBWerVlEJ5tXV9TyMZ6LL+WWm0k= vnpt-composable\n",
+  "privateKeyGit" : "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIF5NmKqSO8shyvCUuKgX068dabT7yLOg8zds1ej68alAoAoGCCqGSM49\nAwEHoUQDQgAETx7dBaaGnTvcrmfhxpxm5yikxSJPjFMG6yzS81C0+c4LzTMPV6qv\nK4CNzHWFRMr4hxull0BxgZZbaSC99Hv0Qg==\n-----END EC PRIVATE KEY-----\n",
+  "publicKeyGit" : "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBE8e3QWmhp073K5n4cacZucopMUiT4xTBuss0vNQtPnOC80zD1eqryuAjcx1hUTK+IcbpZdAcYGWW2kgvfR79EI= vnpt-composable\n",
   "branchProd" : null,
   "branchProtect" : null,
   "n8nProjectId" : null
