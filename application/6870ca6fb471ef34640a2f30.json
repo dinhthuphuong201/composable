@@ -7436,177 +7436,29 @@
   "lastEditedAt" : "2025-07-11T08:25:19.621Z",
   "createdAt" : "2025-07-11T08:25:19.632Z",
   "changeType" : "NONE",
-  "updatedAt" : "2025-08-01T03:00:36.557Z",
+  "updatedAt" : "2025-08-01T03:03:37.702Z",
   "createdBy" : "67da2b5cc0a7bf236ab70f0e",
   "slug" : null,
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : "git-344afb07-21b9-4346-9722-e70ed3a0b95f",
-  "lastCommitAt" : "2025-08-01T03:00:36.557Z",
+  "commitId" : "git-b8c274c1-05ba-41db-872c-c933e1d09cb5",
+  "lastCommitAt" : "2025-08-01T03:03:37.702Z",
   "editingQueries" : [ {
-    "id" : "p9lf5fq51i0qgknfzoxp7q47",
+    "id" : "f905fobgfdn0o30gvxvph0lh",
     "gid" : null,
-    "name" : "update_user_infor",
+    "name" : "update_experience",
     "triggerType" : "manual",
     "baseQuery" : {
       "datasourceId" : "682bfe0d1f307c5ba8acd027",
       "compType" : "restApi",
       "comp" : {
         "bodyType" : "application/json",
-        "body" : "{\n    \"user_id\": {{parseInt(window.localStorage?.user_info_id)}},\n    \"ho_ten\": {{profile_name.value.trim()}},\n    \"so_cccd\": {{profile_idCard.value.trim()}},\n    \"so_dt\": {{profile_phoneNumber.value.trim()}},\n    \"email\": {{profile_email.value.trim()}},\n    \"ngay_sinh\": {{dayjs(profile_dob.value).format('DD/MM/YYYY')}},\n    \"dan_toc\": {{profile_ethnic.value.trim()}},\n    \"ton_giao\": {{profile_religion.value.trim()}},\n    \"gioi_tinh\": {{profile_gender.value.trim()}},\n    \"tinh_tp_thuongtru_id\": {{parseInt(profile_province.value)}},\n    \"xa_phuong_thuongtru_id\": {{parseInt(profile_ward.value)}},\n    \"diachi_thuongtru\": {{profile_address.value.trim()}},\n    \"tinh_tp_hiennay_id\": {{parseInt(profile_nowProvince.value)}},\n    \"xa_phuong_hiennay_id\": {{parseInt(profile_nowWard.value)}},\n    \"diachi_hiennay\": {{profile_addressNow.value.trim()}},\n    \"doituong_uutien\": {{profile_priority.value}},\n    \"doituong_uutien_mota\": {{profile_priorityDescription.value != \"\" ? profile_priorityDescription.value.trim() : \"\"}}\n}",
+        "body" : " {\n    \"id\": {{get_experience_by_id.data.data.id}},\n    \"chuc_danh\": {{updateExperience_jobTitle.value.trim()}},\n    \"cong_ty\": {{updateExperience_companyName.value.trim()}},\n    \"start_date\": {{dayjs(updateExperience_startDate.value).format('MM/YYYY')}},\n    \"end_date\": {{dayjs(updateExperience_endDate.value).format('MM/YYYY')}},\n    \"mo_ta\": {{updateExperience_description.value.trim()}},\n    \"nguoi_ld_id\": {{get_userInfo.data.data.id}}\n}",
         "httpMethod" : "PUT",
-        "path" : "/api/svl/nld/info",
+        "path" : "/api/svl/nld/knlv",
         "headers" : [ {
           "key" : "Content-Type",
           "value" : "application/json"
         }, {
-          "key" : "Authorization",
-          "value" : "Bearer {{window.localStorage?.access_token}}"
-        } ],
-        "params" : [ {
-          "key" : "",
-          "value" : ""
-        } ],
-        "bodyFormData" : [ {
-          "key" : "",
-          "value" : "",
-          "type" : "text"
-        } ]
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "49s83pg5z4azck50jeor3blb",
-    "gid" : null,
-    "name" : "delete_experience",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "682bfe0d1f307c5ba8acd027",
-      "compType" : "restApi",
-      "comp" : {
-        "bodyType" : "none",
-        "body" : "",
-        "httpMethod" : "DELETE",
-        "path" : "/49c4cc28-420e-4b04-97e3-23df814d105b/api/svl/nld/knlv/{{state_currentExperienceId.value}}",
-        "headers" : [ {
-          "key" : "Authorization",
-          "value" : "Bearer {{window.localStorage?.access_token}}"
-        } ],
-        "params" : [ {
-          "key" : "",
-          "value" : ""
-        } ],
-        "bodyFormData" : [ {
-          "key" : "",
-          "value" : "",
-          "type" : "text"
-        } ]
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "9tc97wzjyne463de7glctlzh",
-    "gid" : null,
-    "name" : "getWards",
-    "triggerType" : "automatic",
-    "baseQuery" : {
-      "datasourceId" : "682bfe0d1f307c5ba8acd027",
-      "compType" : "restApi",
-      "comp" : {
-        "bodyType" : "none",
-        "body" : "",
-        "httpMethod" : "GET",
-        "path" : "/api/svl/xa_phuong/list",
-        "headers" : [ {
-          "key" : "Authorization",
-          "value" : "Bearer {{window.localStorage?.access_token}}"
-        } ],
-        "params" : [ {
-          "key" : "ma_tinh_thanhpho",
-          "value" : "{{province.value}}"
-        } ],
-        "bodyFormData" : [ {
-          "key" : "",
-          "value" : "",
-          "type" : "text"
-        } ]
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "lzgotkuh88oo76v3tb6r4bjp",
-    "gid" : null,
-    "name" : "getProvinces",
-    "triggerType" : "onPageLoad",
-    "baseQuery" : {
-      "datasourceId" : "682bfe0d1f307c5ba8acd027",
-      "compType" : "restApi",
-      "comp" : {
-        "bodyType" : "none",
-        "body" : "",
-        "httpMethod" : "GET",
-        "path" : "/api/svl/tinh_thanhpho/list",
-        "headers" : [ {
-          "key" : "Authorization",
-          "value" : "Bearer {{window.localStorage?.access_token}}"
-        } ],
-        "params" : [ {
-          "key" : "",
-          "value" : ""
-        } ],
-        "bodyFormData" : [ {
-          "key" : "",
-          "value" : "",
-          "type" : "text"
-        } ]
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "1xggfnxi7lfir70j11xu74n3",
-    "gid" : null,
-    "name" : "get_userInfo",
-    "triggerType" : "onPageLoad",
-    "baseQuery" : {
-      "datasourceId" : "682bfe0d1f307c5ba8acd027",
-      "compType" : "restApi",
-      "comp" : {
-        "bodyType" : "none",
-        "body" : "",
-        "httpMethod" : "GET",
-        "path" : "/b2d66fe5-7555-46b1-8c5e-70dd94021280/api/svl/nld/info/{{window.localStorage?.user_info_id}}",
-        "headers" : [ {
           "key" : "Authorization",
           "value" : "Bearer {{window.localStorage?.access_token}}"
         } ],
@@ -7668,23 +7520,23 @@
       "usingEditingRecord" : true
     }
   }, {
-    "id" : "6p4dcgil0unu7bq2d2txylqr",
+    "id" : "p9lf5fq51i0qgknfzoxp7q47",
     "gid" : null,
-    "name" : "create_education",
+    "name" : "update_user_infor",
     "triggerType" : "manual",
     "baseQuery" : {
       "datasourceId" : "682bfe0d1f307c5ba8acd027",
       "compType" : "restApi",
       "comp" : {
         "bodyType" : "application/json",
-        "body" : " {\n    \"trinhdo_hocvan_id\": {{get_education.data.data.trinhdo_hocvan_id}},\n    \"dm_hocvan_id\": {{parseInt(education_level.value)}},\n    \"cmkt_id\": {{parseInt(education_maxCMKT.value)}},\n    \"chuyen_nganh\": {{education_major.value.trim()}},\n    \"cmkt_khac_id\": {{parseInt(education_otherCMKT.value)}},\n    \"chuyen_nganh_khac\": {{education_major2.value.trim()}},\n    \"trinhdo_khac\": {{education_ortherLevel.value.trim()}},\n    \"trinhdo_kynang\": {{education_skillLevel.value.trim()}},\n    \"trinhdo_ngoaingu\": {{languages.data}},\n    \"trinhdo_tinhoc\": {{informationTechlonogies.data}},\n    \"kynang_mem\": {{(education_softSkill.value).join(',')}},\n    \"nguoi_ld_id\": {{parseInt(get_userInfo.data.data.id)}}\n}\n",
-        "httpMethod" : "POST",
-        "path" : "/api/svl/nld/tdhv",
+        "body" : "{\n    \"user_id\": {{parseInt(window.localStorage?.user_info_id)}},\n    \"ho_ten\": {{profile_name.value.trim()}},\n    \"so_cccd\": {{profile_idCard.value.trim()}},\n    \"so_dt\": {{profile_phoneNumber.value.trim()}},\n    \"email\": {{profile_email.value.trim()}},\n    \"ngay_sinh\": {{dayjs(profile_dob.value).format('DD/MM/YYYY')}},\n    \"dan_toc\": {{profile_ethnic.value.trim()}},\n    \"ton_giao\": {{profile_religion.value.trim()}},\n    \"gioi_tinh\": {{profile_gender.value.trim()}},\n    \"tinh_tp_thuongtru_id\": {{parseInt(profile_province.value)}},\n    \"xa_phuong_thuongtru_id\": {{parseInt(profile_ward.value)}},\n    \"diachi_thuongtru\": {{profile_address.value.trim()}},\n    \"tinh_tp_hiennay_id\": {{parseInt(profile_nowProvince.value)}},\n    \"xa_phuong_hiennay_id\": {{parseInt(profile_nowWard.value)}},\n    \"diachi_hiennay\": {{profile_addressNow.value.trim()}},\n    \"doituong_uutien\": {{profile_priority.value}},\n    \"doituong_uutien_mota\": {{profile_priorityDescription.value != \"\" ? profile_priorityDescription.value.trim() : \"\"}}\n}",
+        "httpMethod" : "PUT",
+        "path" : "/api/svl/nld/info",
         "headers" : [ {
           "key" : "Content-Type",
           "value" : "application/json"
         }, {
-          "key" : "Authorization ",
+          "key" : "Authorization",
           "value" : "Bearer {{window.localStorage?.access_token}}"
         } ],
         "params" : [ {
@@ -7745,46 +7597,6 @@
       "usingEditingRecord" : true
     }
   }, {
-    "id" : "lhcy70s9tp1v4zj4wrceoo15",
-    "gid" : null,
-    "name" : "update_education",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "682bfe0d1f307c5ba8acd027",
-      "compType" : "restApi",
-      "comp" : {
-        "bodyType" : "application/json",
-        "body" : " {\n    \"trinhdo_hocvan_id\": {{get_education.data.data.trinhdo_hocvan_id}},\n    \"dm_hocvan_id\": {{parseInt(education_level.value)}},\n    \"cmkt_id\": {{parseInt(education_maxCMKT.value)}},\n    \"chuyen_nganh\": {{education_major.value.trim()}},\n    \"cmkt_khac_id\": {{parseInt(education_otherCMKT.value)}},\n    \"chuyen_nganh_khac\": {{education_major2.value.trim()}},\n    \"trinhdo_khac\": {{education_ortherLevel.value.trim()}},\n    \"trinhdo_kynang\": {{education_skillLevel.value.trim()}},\n    \"trinhdo_ngoaingu\": {{languages.data}},\n    \"trinhdo_tinhoc\": {{informationTechlonogies.data}},\n    \"kynang_mem\": {{(education_softSkill.value).join(',')}},\n    \"nguoi_ld_id\": {{parseInt(get_userInfo.data.data.id)}}\n}\n",
-        "httpMethod" : "PUT",
-        "path" : "/api/svl/nld/tdhv",
-        "headers" : [ {
-          "key" : "Content-Type",
-          "value" : "application/json"
-        }, {
-          "key" : "Authorization ",
-          "value" : "Bearer {{window.localStorage?.access_token}}"
-        } ],
-        "params" : [ {
-          "key" : "",
-          "value" : ""
-        } ],
-        "bodyFormData" : [ {
-          "key" : "",
-          "value" : "",
-          "type" : "text"
-        } ]
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
     "id" : "x8xdoqnzgcvarrk836j8e1rm",
     "gid" : null,
     "name" : "get_experiences",
@@ -7822,10 +7634,10 @@
       "usingEditingRecord" : true
     }
   }, {
-    "id" : "jd2kxm86c5pqeevsf8eu7z30",
+    "id" : "1xggfnxi7lfir70j11xu74n3",
     "gid" : null,
-    "name" : "getWards_now",
-    "triggerType" : "automatic",
+    "name" : "get_userInfo",
+    "triggerType" : "onPageLoad",
     "baseQuery" : {
       "datasourceId" : "682bfe0d1f307c5ba8acd027",
       "compType" : "restApi",
@@ -7833,14 +7645,14 @@
         "bodyType" : "none",
         "body" : "",
         "httpMethod" : "GET",
-        "path" : "/api/svl/xa_phuong/list",
+        "path" : "/b2d66fe5-7555-46b1-8c5e-70dd94021280/api/svl/nld/info/{{window.localStorage?.user_info_id}}",
         "headers" : [ {
           "key" : "Authorization",
           "value" : "Bearer {{window.localStorage?.access_token}}"
         } ],
         "params" : [ {
-          "key" : "ma_tinh_thanhpho",
-          "value" : "{{nowProvince.value}}"
+          "key" : "",
+          "value" : ""
         } ],
         "bodyFormData" : [ {
           "key" : "",
@@ -7936,23 +7748,211 @@
       "usingEditingRecord" : true
     }
   }, {
-    "id" : "f905fobgfdn0o30gvxvph0lh",
+    "id" : "49s83pg5z4azck50jeor3blb",
     "gid" : null,
-    "name" : "update_experience",
+    "name" : "delete_experience",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "682bfe0d1f307c5ba8acd027",
+      "compType" : "restApi",
+      "comp" : {
+        "bodyType" : "none",
+        "body" : "",
+        "httpMethod" : "DELETE",
+        "path" : "/49c4cc28-420e-4b04-97e3-23df814d105b/api/svl/nld/knlv/{{state_currentExperienceId.value}}",
+        "headers" : [ {
+          "key" : "Authorization",
+          "value" : "Bearer {{window.localStorage?.access_token}}"
+        } ],
+        "params" : [ {
+          "key" : "",
+          "value" : ""
+        } ],
+        "bodyFormData" : [ {
+          "key" : "",
+          "value" : "",
+          "type" : "text"
+        } ]
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "jd2kxm86c5pqeevsf8eu7z30",
+    "gid" : null,
+    "name" : "getWards_now",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "682bfe0d1f307c5ba8acd027",
+      "compType" : "restApi",
+      "comp" : {
+        "bodyType" : "none",
+        "body" : "",
+        "httpMethod" : "GET",
+        "path" : "/api/svl/xa_phuong/list",
+        "headers" : [ {
+          "key" : "Authorization",
+          "value" : "Bearer {{window.localStorage?.access_token}}"
+        } ],
+        "params" : [ {
+          "key" : "ma_tinh_thanhpho",
+          "value" : "{{nowProvince.value}}"
+        } ],
+        "bodyFormData" : [ {
+          "key" : "",
+          "value" : "",
+          "type" : "text"
+        } ]
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "lzgotkuh88oo76v3tb6r4bjp",
+    "gid" : null,
+    "name" : "getProvinces",
+    "triggerType" : "onPageLoad",
+    "baseQuery" : {
+      "datasourceId" : "682bfe0d1f307c5ba8acd027",
+      "compType" : "restApi",
+      "comp" : {
+        "bodyType" : "none",
+        "body" : "",
+        "httpMethod" : "GET",
+        "path" : "/api/svl/tinh_thanhpho/list",
+        "headers" : [ {
+          "key" : "Authorization",
+          "value" : "Bearer {{window.localStorage?.access_token}}"
+        } ],
+        "params" : [ {
+          "key" : "",
+          "value" : ""
+        } ],
+        "bodyFormData" : [ {
+          "key" : "",
+          "value" : "",
+          "type" : "text"
+        } ]
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "9tc97wzjyne463de7glctlzh",
+    "gid" : null,
+    "name" : "getWards",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "682bfe0d1f307c5ba8acd027",
+      "compType" : "restApi",
+      "comp" : {
+        "bodyType" : "none",
+        "body" : "",
+        "httpMethod" : "GET",
+        "path" : "/api/svl/xa_phuong/list",
+        "headers" : [ {
+          "key" : "Authorization",
+          "value" : "Bearer {{window.localStorage?.access_token}}"
+        } ],
+        "params" : [ {
+          "key" : "ma_tinh_thanhpho",
+          "value" : "{{province.value}}"
+        } ],
+        "bodyFormData" : [ {
+          "key" : "",
+          "value" : "",
+          "type" : "text"
+        } ]
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "6p4dcgil0unu7bq2d2txylqr",
+    "gid" : null,
+    "name" : "create_education",
     "triggerType" : "manual",
     "baseQuery" : {
       "datasourceId" : "682bfe0d1f307c5ba8acd027",
       "compType" : "restApi",
       "comp" : {
         "bodyType" : "application/json",
-        "body" : " {\n    \"id\": {{get_experience_by_id.data.data.id}},\n    \"chuc_danh\": {{updateExperience_jobTitle.value.trim()}},\n    \"cong_ty\": {{updateExperience_companyName.value.trim()}},\n    \"start_date\": {{dayjs(updateExperience_startDate.value).format('MM/YYYY')}},\n    \"end_date\": {{dayjs(updateExperience_endDate.value).format('MM/YYYY')}},\n    \"mo_ta\": {{updateExperience_description.value.trim()}},\n    \"nguoi_ld_id\": {{get_userInfo.data.data.id}}\n}",
-        "httpMethod" : "PUT",
-        "path" : "/api/svl/nld/knlv",
+        "body" : " {\n    \"trinhdo_hocvan_id\": {{get_education.data.data.trinhdo_hocvan_id}},\n    \"dm_hocvan_id\": {{parseInt(education_level.value)}},\n    \"cmkt_id\": {{parseInt(education_maxCMKT.value)}},\n    \"chuyen_nganh\": {{education_major.value.trim()}},\n    \"cmkt_khac_id\": {{parseInt(education_otherCMKT.value)}},\n    \"chuyen_nganh_khac\": {{education_major2.value.trim()}},\n    \"trinhdo_khac\": {{education_ortherLevel.value.trim()}},\n    \"trinhdo_kynang\": {{education_skillLevel.value.trim()}},\n    \"trinhdo_ngoaingu\": {{languages.data}},\n    \"trinhdo_tinhoc\": {{informationTechlonogies.data}},\n    \"kynang_mem\": {{(education_softSkill.value).join(',')}},\n    \"nguoi_ld_id\": {{parseInt(get_userInfo.data.data.id)}}\n}\n",
+        "httpMethod" : "POST",
+        "path" : "/api/svl/nld/tdhv",
         "headers" : [ {
           "key" : "Content-Type",
           "value" : "application/json"
         }, {
-          "key" : "Authorization",
+          "key" : "Authorization ",
+          "value" : "Bearer {{window.localStorage?.access_token}}"
+        } ],
+        "params" : [ {
+          "key" : "",
+          "value" : ""
+        } ],
+        "bodyFormData" : [ {
+          "key" : "",
+          "value" : "",
+          "type" : "text"
+        } ]
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "lhcy70s9tp1v4zj4wrceoo15",
+    "gid" : null,
+    "name" : "update_education",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "682bfe0d1f307c5ba8acd027",
+      "compType" : "restApi",
+      "comp" : {
+        "bodyType" : "application/json",
+        "body" : " {\n    \"trinhdo_hocvan_id\": {{get_education.data.data.trinhdo_hocvan_id}},\n    \"dm_hocvan_id\": {{parseInt(education_level.value)}},\n    \"cmkt_id\": {{parseInt(education_maxCMKT.value)}},\n    \"chuyen_nganh\": {{education_major.value.trim()}},\n    \"cmkt_khac_id\": {{parseInt(education_otherCMKT.value)}},\n    \"chuyen_nganh_khac\": {{education_major2.value.trim()}},\n    \"trinhdo_khac\": {{education_ortherLevel.value.trim()}},\n    \"trinhdo_kynang\": {{education_skillLevel.value.trim()}},\n    \"trinhdo_ngoaingu\": {{languages.data}},\n    \"trinhdo_tinhoc\": {{informationTechlonogies.data}},\n    \"kynang_mem\": {{(education_softSkill.value).join(',')}},\n    \"nguoi_ld_id\": {{parseInt(get_userInfo.data.data.id)}}\n}\n",
+        "httpMethod" : "PUT",
+        "path" : "/api/svl/nld/tdhv",
+        "headers" : [ {
+          "key" : "Content-Type",
+          "value" : "application/json"
+        }, {
+          "key" : "Authorization ",
           "value" : "Bearer {{window.localStorage?.access_token}}"
         } ],
         "params" : [ {

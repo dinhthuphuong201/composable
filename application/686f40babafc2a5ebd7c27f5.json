@@ -208,13 +208,32 @@
   "lastEditedAt" : "2025-07-16T09:16:38.991Z",
   "createdAt" : "2025-07-10T04:25:30.827Z",
   "changeType" : "NONE",
-  "updatedAt" : "2025-08-01T03:00:36.551Z",
+  "updatedAt" : "2025-08-01T03:03:37.618Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "slug" : null,
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : "git-344afb07-21b9-4346-9722-e70ed3a0b95f",
-  "lastCommitAt" : "2025-08-01T03:00:36.551Z",
+  "commitId" : "git-b8c274c1-05ba-41db-872c-c933e1d09cb5",
+  "lastCommitAt" : "2025-08-01T03:03:37.618Z",
   "editingQueries" : [ {
+    "id" : "dwl7v10kce3bcd53fttw01rv",
+    "gid" : null,
+    "name" : "query1",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "#JS_CODE",
+      "compType" : "js",
+      "comp" : { },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
     "id" : "jtkn7shjzuegg341zdtlszhj",
     "gid" : null,
     "name" : "query2",
@@ -239,25 +258,6 @@
         "disablePreparedStatement" : false,
         "isSecure" : true
       },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "dwl7v10kce3bcd53fttw01rv",
-    "gid" : null,
-    "name" : "query1",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "#JS_CODE",
-      "compType" : "js",
-      "comp" : { },
       "timeout" : ""
     },
     "timeoutStr" : "",

@@ -356,12 +356,12 @@
   "lastEditedAt" : "2025-07-15T07:32:27.231Z",
   "createdAt" : "2025-07-11T08:29:28.725Z",
   "changeType" : "NONE",
-  "updatedAt" : "2025-08-01T03:00:36.538Z",
+  "updatedAt" : "2025-08-01T03:03:37.600Z",
   "createdBy" : "67da2b5cc0a7bf236ab70f0e",
   "slug" : "sdfsdfsdfsdfsdfdf",
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : "git-344afb07-21b9-4346-9722-e70ed3a0b95f",
-  "lastCommitAt" : "2025-08-01T03:00:36.538Z",
+  "commitId" : "git-b8c274c1-05ba-41db-872c-c933e1d09cb5",
+  "lastCommitAt" : "2025-08-01T03:03:37.600Z",
   "editingQueries" : [ {
     "id" : "spmka31yhw3v3k5kh4nk3qwo",
     "gid" : null,
@@ -372,6 +372,41 @@
       "compType" : "js",
       "comp" : {
         "script" : "let a = \"\";\nlet b = a.getById();\nreturn 0;"
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "8h8o9snvi30po0zg7lawjlkp",
+    "gid" : null,
+    "name" : "query1",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT * FROM Persons",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
       },
       "timeout" : ""
     },
@@ -454,6 +489,27 @@
       "usingEditingRecord" : true
     }
   }, {
+    "id" : "lwdd8c7jsz9r0zowj4ypkde0",
+    "gid" : null,
+    "name" : "query4",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "",
+      "compType" : "streamApi",
+      "comp" : {
+        "path" : "hhhh"
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
     "id" : "1iyojhtmopy156bh3ch64zhr",
     "gid" : null,
     "name" : "query6",
@@ -478,62 +534,6 @@
       "libraryQueryRecordId" : "latest",
       "usingLiveRecord" : true,
       "usingEditingRecord" : false
-    }
-  }, {
-    "id" : "lwdd8c7jsz9r0zowj4ypkde0",
-    "gid" : null,
-    "name" : "query4",
-    "triggerType" : "automatic",
-    "baseQuery" : {
-      "datasourceId" : "",
-      "compType" : "streamApi",
-      "comp" : {
-        "path" : "hhhh"
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "8h8o9snvi30po0zg7lawjlkp",
-    "gid" : null,
-    "name" : "query1",
-    "triggerType" : "automatic",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "",
-          "changeSet" : {
-            "compType" : "KEY_VALUE_PAIRS",
-            "comp" : [ {
-              "column" : "",
-              "value" : ""
-            } ]
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "SELECT * FROM Persons",
-        "disablePreparedStatement" : false,
-        "isSecure" : true
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
     }
   } ],
   "editingModules" : [ ],

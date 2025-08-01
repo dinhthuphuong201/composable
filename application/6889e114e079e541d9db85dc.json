@@ -73,7 +73,7 @@
     }, {
       "compType" : "js",
       "comp" : {
-        "script" : "const mysql = require('mysql');\n\nconst connection = mysql.createConnection({\n  host: 'localhost',\n  user: 'your_username',\n  password: 'your_password',\n  database: 'your_database'\n});\n\nconnection.connect((err) => {\n  if (err) {\n    console.error('Error connecting to MySQL:', err);\n    return;\n  }\n  console.log('Connected to MySQL database!');\n\n  const createTableQuery = `\n    CREATE TABLE IF NOT EXISTS Persons (\n      PersonID INT NOT NULL,\n      LastName VARCHAR(255),\n      FirstName VARCHAR(255),\n      Address VARCHAR(255),\n      City VARCHAR(255),\n      PRIMARY KEY (PersonID)\n    );\n  `;\n\n  connection.query(createTableQuery, (err, results) => {\n    if (err) {\n      console.error('Error creating table:', err);\n      return;\n    }\n    console.log('Table created successfully:', results);\n    connection.end();\n  });\n});"
+        "script" : "{/* The provided JavaScript function named 'plusNumbers' takes two parameters, 'a' and 'b', and returns their sum. */}\nfunction ABc(a, b) {\n  return a + b;\n}"
       },
       "id" : "x1lgarnl3u81eaevtzowuzdk",
       "name" : "query2",
@@ -173,37 +173,16 @@
   "publicToMarketplace" : false,
   "agencyProfile" : false,
   "editingUserId" : "67da2b5cc0a7bf236ab70f0e",
-  "lastEditedAt" : "2025-08-01T02:28:12.690Z",
+  "lastEditedAt" : "2025-08-01T03:45:10.380Z",
   "createdAt" : "2025-07-30T09:08:36.463Z",
-  "changeType" : "NONE",
-  "updatedAt" : "2025-08-01T03:00:36.545Z",
+  "changeType" : "CREATE",
+  "updatedAt" : "2025-08-01T05:13:03.921Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "slug" : null,
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : "git-344afb07-21b9-4346-9722-e70ed3a0b95f",
-  "lastCommitAt" : "2025-08-01T03:00:36.545Z",
+  "commitId" : "git-b8c274c1-05ba-41db-872c-c933e1d09cb5",
+  "lastCommitAt" : "2025-08-01T03:03:37.611Z",
   "editingQueries" : [ {
-    "id" : "x1lgarnl3u81eaevtzowuzdk",
-    "gid" : null,
-    "name" : "query2",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "#JS_CODE",
-      "compType" : "js",
-      "comp" : {
-        "script" : "const mysql = require('mysql');\n\nconst connection = mysql.createConnection({\n  host: 'localhost',\n  user: 'your_username',\n  password: 'your_password',\n  database: 'your_database'\n});\n\nconnection.connect((err) => {\n  if (err) {\n    console.error('Error connecting to MySQL:', err);\n    return;\n  }\n  console.log('Connected to MySQL database!');\n\n  const createTableQuery = `\n    CREATE TABLE IF NOT EXISTS Persons (\n      PersonID INT NOT NULL,\n      LastName VARCHAR(255),\n      FirstName VARCHAR(255),\n      Address VARCHAR(255),\n      City VARCHAR(255),\n      PRIMARY KEY (PersonID)\n    );\n  `;\n\n  connection.query(createTableQuery, (err, results) => {\n    if (err) {\n      console.error('Error creating table:', err);\n      return;\n    }\n    console.log('Table created successfully:', results);\n    connection.end();\n  });\n});"
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
     "id" : "0o7praql2k9nkug947t068ys",
     "gid" : null,
     "name" : "query1",
@@ -227,6 +206,27 @@
         "sql" : "CREATE TABLE IF NOT EXISTS Users (\n  UserID INT AUTO_INCREMENT PRIMARY KEY,\n  Username VARCHAR(255) NOT NULL,\n  Email VARCHAR(255) NOT NULL,\n  Password VARCHAR(255) NOT NULL,\n  CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);",
         "disablePreparedStatement" : false,
         "isSecure" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "x1lgarnl3u81eaevtzowuzdk",
+    "gid" : null,
+    "name" : "query2",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "#JS_CODE",
+      "compType" : "js",
+      "comp" : {
+        "script" : "{/* The provided JavaScript function named 'plusNumbers' takes two parameters, 'a' and 'b', and returns their sum. */}\nfunction ABc(a, b) {\n  return a + b;\n}"
       },
       "timeout" : ""
     },
@@ -309,7 +309,7 @@
     }, {
       "compType" : "js",
       "comp" : {
-        "script" : "const mysql = require('mysql');\n\nconst connection = mysql.createConnection({\n  host: 'localhost',\n  user: 'your_username',\n  password: 'your_password',\n  database: 'your_database'\n});\n\nconnection.connect((err) => {\n  if (err) {\n    console.error('Error connecting to MySQL:', err);\n    return;\n  }\n  console.log('Connected to MySQL database!');\n\n  const createTableQuery = `\n    CREATE TABLE IF NOT EXISTS Persons (\n      PersonID INT NOT NULL,\n      LastName VARCHAR(255),\n      FirstName VARCHAR(255),\n      Address VARCHAR(255),\n      City VARCHAR(255),\n      PRIMARY KEY (PersonID)\n    );\n  `;\n\n  connection.query(createTableQuery, (err, results) => {\n    if (err) {\n      console.error('Error creating table:', err);\n      return;\n    }\n    console.log('Table created successfully:', results);\n    connection.end();\n  });\n});"
+        "script" : "{/* The provided JavaScript function named 'plusNumbers' takes two parameters, 'a' and 'b', and returns their sum. */}\nfunction ABc(a, b) {\n  return a + b;\n}"
       },
       "id" : "x1lgarnl3u81eaevtzowuzdk",
       "name" : "query2",

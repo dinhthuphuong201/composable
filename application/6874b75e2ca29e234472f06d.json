@@ -1932,17 +1932,17 @@
   "lastEditedAt" : "2025-07-15T03:51:27.747Z",
   "createdAt" : "2025-07-14T07:53:02.505Z",
   "changeType" : "NONE",
-  "updatedAt" : "2025-08-01T03:00:36.534Z",
+  "updatedAt" : "2025-08-01T03:03:37.595Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "slug" : null,
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : "git-344afb07-21b9-4346-9722-e70ed3a0b95f",
-  "lastCommitAt" : "2025-08-01T03:00:36.534Z",
+  "commitId" : "git-b8c274c1-05ba-41db-872c-c933e1d09cb5",
+  "lastCommitAt" : "2025-08-01T03:03:37.594Z",
   "editingQueries" : [ {
-    "id" : "jp471sb65yum2qtd",
+    "id" : "1yyqmkrwj52i0i5t",
     "gid" : null,
-    "name" : "DeleteQuery",
-    "triggerType" : "manual",
+    "name" : "CountQuery",
+    "triggerType" : "onQueryExecution",
     "baseQuery" : {
       "datasourceId" : "68673796feca08083fa968a6",
       "compType" : "mysql",
@@ -1959,7 +1959,7 @@
           }
         },
         "mode" : "SQL",
-        "sql" : "DELETE FROM students WHERE `student_id` = {{table_data.selectedRow.student_id}}",
+        "sql" : "SELECT count(`student_id`) AS total_record\nFROM students\nWHERE ({{input_search.value?.trim()}} = '' OR (`student_id` LIKE '%{{input_search.value?.trim()}}%'))",
         "disablePreparedStatement" : false,
         "isSecure" : false
       },
@@ -2006,64 +2006,26 @@
       "usingEditingRecord" : true
     }
   }, {
-    "id" : "1yyqmkrwj52i0i5t",
+    "id" : "l2petw6xv1d3hdgl",
     "gid" : null,
-    "name" : "CountQuery",
-    "triggerType" : "onQueryExecution",
+    "name" : "InsertQuery",
+    "triggerType" : "manual",
     "baseQuery" : {
       "datasourceId" : "68673796feca08083fa968a6",
       "compType" : "mysql",
       "comp" : {
         "commandType" : "INSERT",
         "command" : {
-          "table" : "",
+          "table" : "students",
           "changeSet" : {
-            "compType" : "KEY_VALUE_PAIRS",
-            "comp" : [ {
-              "column" : "",
-              "value" : ""
-            } ]
+            "compType" : "OBJECT",
+            "comp" : "{{ form_insert.data }}"
           }
         },
         "mode" : "SQL",
-        "sql" : "SELECT count(`student_id`) AS total_record\nFROM students\nWHERE ({{input_search.value?.trim()}} = '' OR (`student_id` LIKE '%{{input_search.value?.trim()}}%'))",
+        "sql" : "INSERT INTO students (\n`student_id`,\n`full_name`,\n`birth_date`,\n`gender`,\n`average_score`)\nVALUES (\n{{form_insert.data.student_id}},\n{{form_insert.data.full_name}},\nSTR_TO_DATE({{form_insert.data.birth_date}}, '%Y-%m-%d'),\n{{form_insert.data.gender}},\n{{form_insert.data.average_score}})",
         "disablePreparedStatement" : false,
         "isSecure" : false
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "a9xwawchkfy5pp3f",
-    "gid" : null,
-    "name" : "SelectQuery",
-    "triggerType" : "automatic",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "",
-          "changeSet" : {
-            "compType" : "KEY_VALUE_PAIRS",
-            "comp" : [ {
-              "column" : "",
-              "value" : ""
-            } ]
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "SELECT\n`student_id`,\n `full_name`,\n `birth_date`,\n `gender`,\n `average_score`\nFROM students\nWHERE ({{input_search.value?.trim()}} = '' OR (`student_id` LIKE '%{{input_search.value?.trim()}}%'))\nLIMIT {{table_data.pageSize}} OFFSET {{table_data.pageOffset}}",
-        "disablePreparedStatement" : false,
-        "isSecure" : true
       },
       "timeout" : ""
     },
@@ -2136,38 +2098,6 @@
       "usingEditingRecord" : true
     }
   }, {
-    "id" : "l2petw6xv1d3hdgl",
-    "gid" : null,
-    "name" : "InsertQuery",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "students",
-          "changeSet" : {
-            "compType" : "OBJECT",
-            "comp" : "{{ form_insert.data }}"
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "INSERT INTO students (\n`student_id`,\n`full_name`,\n`birth_date`,\n`gender`,\n`average_score`)\nVALUES (\n{{form_insert.data.student_id}},\n{{form_insert.data.full_name}},\nSTR_TO_DATE({{form_insert.data.birth_date}}, '%Y-%m-%d'),\n{{form_insert.data.gender}},\n{{form_insert.data.average_score}})",
-        "disablePreparedStatement" : false,
-        "isSecure" : false
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
     "id" : "rqrrtnwi1qr1kfuoke1ku1hj",
     "gid" : null,
     "name" : "query1",
@@ -2189,6 +2119,41 @@
       "usingEditingRecord" : true
     }
   }, {
+    "id" : "a9xwawchkfy5pp3f",
+    "gid" : null,
+    "name" : "SelectQuery",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT\n`student_id`,\n `full_name`,\n `birth_date`,\n `gender`,\n `average_score`\nFROM students\nWHERE ({{input_search.value?.trim()}} = '' OR (`student_id` LIKE '%{{input_search.value?.trim()}}%'))\nLIMIT {{table_data.pageSize}} OFFSET {{table_data.pageOffset}}",
+        "disablePreparedStatement" : false,
+        "isSecure" : true
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
     "id" : "gkkq0fvjv9rp1m1xge9ecmca",
     "gid" : null,
     "name" : "query2",
@@ -2198,6 +2163,41 @@
       "compType" : "js",
       "comp" : {
         "script" : "document.querySelector('[data-testid=\"personalCSS\"]').style.backgroundColor = 'red';"
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "jp471sb65yum2qtd",
+    "gid" : null,
+    "name" : "DeleteQuery",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "DELETE FROM students WHERE `student_id` = {{table_data.selectedRow.student_id}}",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
       },
       "timeout" : ""
     },

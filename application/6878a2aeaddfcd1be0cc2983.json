@@ -1751,78 +1751,13 @@
   "lastEditedAt" : "2025-07-17T07:13:50.525Z",
   "createdAt" : "2025-07-17T07:13:50.562Z",
   "changeType" : "NONE",
-  "updatedAt" : "2025-08-01T03:00:36.532Z",
+  "updatedAt" : "2025-08-01T03:03:37.592Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "slug" : null,
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : "git-344afb07-21b9-4346-9722-e70ed3a0b95f",
-  "lastCommitAt" : "2025-08-01T03:00:36.532Z",
+  "commitId" : "git-b8c274c1-05ba-41db-872c-c933e1d09cb5",
+  "lastCommitAt" : "2025-08-01T03:03:37.592Z",
   "editingQueries" : [ {
-    "id" : "lonponkdoc6ugejd",
-    "gid" : null,
-    "name" : "SelectQuery",
-    "triggerType" : "automatic",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "",
-          "changeSet" : {
-            "compType" : "KEY_VALUE_PAIRS",
-            "comp" : [ {
-              "column" : "",
-              "value" : ""
-            } ]
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "SELECT\n`LastName`,\n `FirstName`,\n `City`,\n `PersonID`,\n `Address`,\n `id`\nFROM Persons\nWHERE ({{input_search.value?.trim()}} = '' OR (`LastName` LIKE '%{{input_search.value?.trim()}}%'))\nLIMIT {{table_data.pageSize}} OFFSET {{table_data.pageOffset}}",
-        "disablePreparedStatement" : false
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "y0feiohgh73kmp5u",
-    "gid" : null,
-    "name" : "UpdateQuery",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "Persons",
-          "changeSet" : {
-            "compType" : "OBJECT",
-            "comp" : "{{ form_update.data }}"
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "UPDATE Persons\nSET\n`LastName` = {{form_update.data.LastName}},\n  `FirstName` = {{form_update.data.FirstName}},\n  `City` = {{form_update.data.City}},\n  `PersonID` = {{form_update.data.PersonID}},\n  `Address` = {{form_update.data.Address}}\nWHERE `id` = {{table_data.selectedRow.id}}",
-        "disablePreparedStatement" : false
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
     "id" : "4imnuk0ptsqjt3wv",
     "gid" : null,
     "name" : "CountQuery",
@@ -1844,6 +1779,40 @@
         },
         "mode" : "SQL",
         "sql" : "SELECT count(`id`) AS total_record\nFROM Persons\nWHERE ({{input_search.value?.trim()}} = '' OR (`LastName` LIKE '%{{input_search.value?.trim()}}%'))",
+        "disablePreparedStatement" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "lonponkdoc6ugejd",
+    "gid" : null,
+    "name" : "SelectQuery",
+    "triggerType" : "automatic",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "SELECT\n`LastName`,\n `FirstName`,\n `City`,\n `PersonID`,\n `Address`,\n `id`\nFROM Persons\nWHERE ({{input_search.value?.trim()}} = '' OR (`LastName` LIKE '%{{input_search.value?.trim()}}%'))\nLIMIT {{table_data.pageSize}} OFFSET {{table_data.pageOffset}}",
         "disablePreparedStatement" : false
       },
       "timeout" : ""
@@ -1909,6 +1878,37 @@
         },
         "mode" : "SQL",
         "sql" : "INSERT INTO Persons (\n`LastName`,\n`FirstName`,\n`City`,\n`PersonID`,\n`Address`)\nVALUES (\n{{form_insert.data.LastName}},\n{{form_insert.data.FirstName}},\n{{form_insert.data.City}},\n{{form_insert.data.PersonID}},\n{{form_insert.data.Address}})",
+        "disablePreparedStatement" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "y0feiohgh73kmp5u",
+    "gid" : null,
+    "name" : "UpdateQuery",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "Persons",
+          "changeSet" : {
+            "compType" : "OBJECT",
+            "comp" : "{{ form_update.data }}"
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "UPDATE Persons\nSET\n`LastName` = {{form_update.data.LastName}},\n  `FirstName` = {{form_update.data.FirstName}},\n  `City` = {{form_update.data.City}},\n  `PersonID` = {{form_update.data.PersonID}},\n  `Address` = {{form_update.data.Address}}\nWHERE `id` = {{table_data.selectedRow.id}}",
         "disablePreparedStatement" : false
       },
       "timeout" : ""

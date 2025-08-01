@@ -1,6 +1,6 @@
 {
   "id" : "688044bf6141a340779c7cd6",
-  "updatedAt" : "2025-08-01T03:00:36.605Z",
+  "updatedAt" : "2025-08-01T03:03:37.904Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "gid" : "0198350c-8a12-7261-aaaa-f5fe21545905",
   "organizationId" : "6858c3d55977a424158e6a91",
@@ -49,9 +49,9 @@
       "externalToken" : ""
     }
   },
-  "commitId" : "git-344afb07-21b9-4346-9722-e70ed3a0b95f",
+  "commitId" : "git-b8c274c1-05ba-41db-872c-c933e1d09cb5",
   "changeType" : "NONE",
-  "lastCommitAt" : "2025-08-01T03:00:36.605Z",
+  "lastCommitAt" : "2025-08-01T03:03:37.904Z",
   "baseQuerySupplier" : { },
   "query" : {
     "datasourceId" : "6878bd7caddfcd1be0cc3414",
