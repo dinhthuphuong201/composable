@@ -1,6 +1,6 @@
 {
   "id" : "68673824feca08083fa968b4",
-  "updatedAt" : "2025-07-17T08:48:29.839Z",
+  "updatedAt" : "2025-08-01T02:56:44.604Z",
   "createdBy" : "67da2b5cc0a7bf236ab70f0e",
   "gid" : "0197d333-4e5e-733b-9c4d-90482859e799",
   "name" : "MongoDB",
@@ -21,8 +21,8 @@
     "password" : null,
     "authMechanism" : null
   },
-  "commitId" : null,
-  "changeType" : null,
-  "lastCommitAt" : null,
+  "commitId" : "git-6f76ab49-626c-4c12-aa83-9d70c7d23a6b",
+  "changeType" : "NONE",
+  "lastCommitAt" : "2025-08-01T02:56:44.604Z",
   "n8nCredentialId" : null
 }

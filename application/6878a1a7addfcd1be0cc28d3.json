@@ -2862,13 +2862,13 @@
   "editingUserId" : "",
   "lastEditedAt" : "2025-07-17T07:09:27.124Z",
   "createdAt" : "2025-07-17T07:09:27.178Z",
-  "changeType" : "CREATE",
-  "updatedAt" : "2025-07-30T08:54:22.953Z",
+  "changeType" : "NONE",
+  "updatedAt" : "2025-08-01T02:56:31.888Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "slug" : null,
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : null,
-  "lastCommitAt" : null,
+  "commitId" : "git-6f76ab49-626c-4c12-aa83-9d70c7d23a6b",
+  "lastCommitAt" : "2025-08-01T02:56:31.888Z",
   "editingQueries" : [ {
     "id" : "nz5y7u3culuqyoko",
     "gid" : null,
@@ -2938,40 +2938,6 @@
       "usingEditingRecord" : true
     }
   }, {
-    "id" : "h6s8zaezwwaki4y2",
-    "gid" : null,
-    "name" : "DeleteQuery",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "",
-          "changeSet" : {
-            "compType" : "KEY_VALUE_PAIRS",
-            "comp" : [ {
-              "column" : "",
-              "value" : ""
-            } ]
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "DELETE FROM feedback_form WHERE `customerID` = {{table_data.selectedRow.customerID}}",
-        "disablePreparedStatement" : false
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
     "id" : "o7c6fxdd92n74h0h",
     "gid" : null,
     "name" : "InsertQuery",
@@ -3021,6 +2987,40 @@
         },
         "mode" : "SQL",
         "sql" : "UPDATE feedback_form\nSET\n`satisfaction_level` = {{form_update.data.satisfaction_level}},\n  `quality_rating` = {{form_update.data.quality_rating}},\n  `category` = {{form_update.data.category}},\n  `gender` = {{form_update.data.gender}},\n  `priority_group` = {{form_update.data.priority_group}},\n  `feature_enabled` = {{form_update.data.feature_enabled}},\n  `purchase_date` = STR_TO_DATE({{form_update.data.purchase_date}}, '%Y-%m-%d'),\n  `additional_notes` = {{form_update.data.additional_notes}},\n  `confirm_password` = {{form_update.data.confirm_password}},\n  `description` = {{form_update.data.description}},\n  `agree_terms` = {{form_update.data.agree_terms}},\n  `invoice_file_path` = {{form_update.data.invoice_file_path}},\n  `order_time` = STR_TO_DATE({{form_update.data.order_time}}, '%H:%i:%s')\nWHERE `customerID` = {{table_data.selectedRow.customerID}}",
+        "disablePreparedStatement" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "h6s8zaezwwaki4y2",
+    "gid" : null,
+    "name" : "DeleteQuery",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "",
+          "changeSet" : {
+            "compType" : "KEY_VALUE_PAIRS",
+            "comp" : [ {
+              "column" : "",
+              "value" : ""
+            } ]
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "DELETE FROM feedback_form WHERE `customerID` = {{table_data.selectedRow.customerID}}",
         "disablePreparedStatement" : false
       },
       "timeout" : ""

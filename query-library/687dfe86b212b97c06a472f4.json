@@ -1,6 +1,6 @@
 {
   "id" : "687dfe86b212b97c06a472f4",
-  "updatedAt" : "2025-07-23T01:25:20.516Z",
+  "updatedAt" : "2025-08-01T02:56:44.619Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "gid" : "01982c2a-3e9b-7b4b-8e1f-dd5de2ccad30",
   "organizationId" : "6858c3d55977a424158e6a91",
@@ -49,9 +49,9 @@
       "externalToken" : ""
     }
   },
-  "commitId" : null,
-  "changeType" : "UPDATE",
-  "lastCommitAt" : null,
+  "commitId" : "git-6f76ab49-626c-4c12-aa83-9d70c7d23a6b",
+  "changeType" : "NONE",
+  "lastCommitAt" : "2025-08-01T02:56:44.619Z",
   "baseQuerySupplier" : { },
   "query" : {
     "datasourceId" : "6878bd7caddfcd1be0cc3414",

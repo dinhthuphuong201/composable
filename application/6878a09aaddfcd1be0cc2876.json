@@ -1802,17 +1802,17 @@
   "editingUserId" : "686b37008543551b717cb6ab",
   "lastEditedAt" : "2025-07-17T07:23:53.769Z",
   "createdAt" : "2025-07-17T07:04:58.294Z",
-  "changeType" : null,
-  "updatedAt" : "2025-07-17T07:35:10.238Z",
+  "changeType" : "NONE",
+  "updatedAt" : "2025-08-01T02:56:31.897Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "slug" : null,
   "organizationId" : "6858c3d55977a424158e6a91",
-  "commitId" : null,
-  "lastCommitAt" : null,
+  "commitId" : "git-6f76ab49-626c-4c12-aa83-9d70c7d23a6b",
+  "lastCommitAt" : "2025-08-01T02:56:31.897Z",
   "editingQueries" : [ {
-    "id" : "gitrvdtb5e2dst2l",
+    "id" : "9a962r9x7qbbrgat",
     "gid" : null,
-    "name" : "InsertQuery",
+    "name" : "UpdateQuery",
     "triggerType" : "manual",
     "baseQuery" : {
       "datasourceId" : "68673796feca08083fa968a6",
@@ -1823,11 +1823,11 @@
           "table" : "students",
           "changeSet" : {
             "compType" : "OBJECT",
-            "comp" : "{{ form_insert.data }}"
+            "comp" : "{{ form_update.data }}"
           }
         },
         "mode" : "SQL",
-        "sql" : "INSERT INTO students (\n`student_id`,\n`full_name`,\n`birth_date`,\n`gender`,\n`average_score`)\nVALUES (\n{{form_insert.data.student_id}},\n{{form_insert.data.full_name}},\nSTR_TO_DATE({{form_insert.data.birth_date}}, '%Y-%m-%d'),\n{{form_insert.data.gender}},\n{{form_insert.data.average_score}})",
+        "sql" : "UPDATE students\nSET\n`student_id` = {{form_update.data.student_id}},\n  `full_name` = {{form_update.data.full_name}},\n  `birth_date` = STR_TO_DATE({{form_update.data.birth_date}}, '%Y-%m-%d'),\n  `gender` = {{form_update.data.gender}},\n  `average_score` = {{form_update.data.average_score}}\nWHERE `student_id` = {{table_data.selectedRow.student_id}}",
         "disablePreparedStatement" : false,
         "isSecure" : false
       },
@@ -1863,6 +1863,38 @@
         },
         "mode" : "SQL",
         "sql" : "SELECT count(`student_id`) AS total_record\nFROM students\nWHERE ({{input_search.value?.trim()}} = '' OR (`student_id` LIKE '%{{input_search.value?.trim()}}%' OR `full_name` LIKE '%{{input_search.value?.trim()}}%' OR `gender` LIKE '%{{input_search.value?.trim()}}%'))",
+        "disablePreparedStatement" : false,
+        "isSecure" : false
+      },
+      "timeout" : ""
+    },
+    "timeoutStr" : "",
+    "usingLibraryQuery" : false,
+    "libraryRecordQueryId" : {
+      "libraryQueryId" : null,
+      "libraryQueryRecordId" : null,
+      "usingLiveRecord" : false,
+      "usingEditingRecord" : true
+    }
+  }, {
+    "id" : "gitrvdtb5e2dst2l",
+    "gid" : null,
+    "name" : "InsertQuery",
+    "triggerType" : "manual",
+    "baseQuery" : {
+      "datasourceId" : "68673796feca08083fa968a6",
+      "compType" : "mysql",
+      "comp" : {
+        "commandType" : "INSERT",
+        "command" : {
+          "table" : "students",
+          "changeSet" : {
+            "compType" : "OBJECT",
+            "comp" : "{{ form_insert.data }}"
+          }
+        },
+        "mode" : "SQL",
+        "sql" : "INSERT INTO students (\n`student_id`,\n`full_name`,\n`birth_date`,\n`gender`,\n`average_score`)\nVALUES (\n{{form_insert.data.student_id}},\n{{form_insert.data.full_name}},\nSTR_TO_DATE({{form_insert.data.birth_date}}, '%Y-%m-%d'),\n{{form_insert.data.gender}},\n{{form_insert.data.average_score}})",
         "disablePreparedStatement" : false,
         "isSecure" : false
       },
@@ -1933,38 +1965,6 @@
         },
         "mode" : "SQL",
         "sql" : "DELETE FROM students WHERE `student_id` = {{table_data.selectedRow.student_id}}",
-        "disablePreparedStatement" : false,
-        "isSecure" : false
-      },
-      "timeout" : ""
-    },
-    "timeoutStr" : "",
-    "usingLibraryQuery" : false,
-    "libraryRecordQueryId" : {
-      "libraryQueryId" : null,
-      "libraryQueryRecordId" : null,
-      "usingLiveRecord" : false,
-      "usingEditingRecord" : true
-    }
-  }, {
-    "id" : "9a962r9x7qbbrgat",
-    "gid" : null,
-    "name" : "UpdateQuery",
-    "triggerType" : "manual",
-    "baseQuery" : {
-      "datasourceId" : "68673796feca08083fa968a6",
-      "compType" : "mysql",
-      "comp" : {
-        "commandType" : "INSERT",
-        "command" : {
-          "table" : "students",
-          "changeSet" : {
-            "compType" : "OBJECT",
-            "comp" : "{{ form_update.data }}"
-          }
-        },
-        "mode" : "SQL",
-        "sql" : "UPDATE students\nSET\n`student_id` = {{form_update.data.student_id}},\n  `full_name` = {{form_update.data.full_name}},\n  `birth_date` = STR_TO_DATE({{form_update.data.birth_date}}, '%Y-%m-%d'),\n  `gender` = {{form_update.data.gender}},\n  `average_score` = {{form_update.data.average_score}}\nWHERE `student_id` = {{table_data.selectedRow.student_id}}",
         "disablePreparedStatement" : false,
         "isSecure" : false
       },

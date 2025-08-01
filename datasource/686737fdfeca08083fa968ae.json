@@ -1,6 +1,6 @@
 {
   "id" : "686737fdfeca08083fa968ae",
-  "updatedAt" : "2025-07-04T03:10:37.314Z",
+  "updatedAt" : "2025-08-01T02:56:44.605Z",
   "createdBy" : "67da2b5cc0a7bf236ab70f0e",
   "gid" : "0197d332-b7ca-771b-a4e7-62cdbd74d68f",
   "name" : "Postgre",
@@ -20,8 +20,8 @@
     "extParams" : { },
     "readonly" : false
   },
-  "commitId" : null,
-  "changeType" : null,
-  "lastCommitAt" : null,
+  "commitId" : "git-6f76ab49-626c-4c12-aa83-9d70c7d23a6b",
+  "changeType" : "NONE",
+  "lastCommitAt" : "2025-08-01T02:56:44.604Z",
   "n8nCredentialId" : null
 }

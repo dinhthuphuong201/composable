@@ -1,6 +1,6 @@
 {
   "id" : "6878bd7caddfcd1be0cc3414",
-  "updatedAt" : "2025-07-23T01:24:15.088Z",
+  "updatedAt" : "2025-08-01T02:56:44.604Z",
   "createdBy" : "686b37008543551b717cb6ab",
   "gid" : "019817a4-2c5d-7f8f-b3c1-8012e3c1a7af",
   "name" : "MySQLNEW",
@@ -20,8 +20,8 @@
     "extParams" : { },
     "readonly" : false
   },
-  "commitId" : null,
-  "changeType" : "UPDATE",
-  "lastCommitAt" : null,
+  "commitId" : "git-6f76ab49-626c-4c12-aa83-9d70c7d23a6b",
+  "changeType" : "NONE",
+  "lastCommitAt" : "2025-08-01T02:56:44.604Z",
   "n8nCredentialId" : null
 }
